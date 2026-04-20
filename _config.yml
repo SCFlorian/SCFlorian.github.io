@@ -1,3 +1,6 @@
-theme: jekyll-theme-cayman
+remote_theme: daattali/beautiful-jekyll
+plugins:
+  - jekyll-remote-theme
+
 title: Florian SCHORER - Data Scientist & Machine Learning
-description: L'objectif ici est de vous montrer mes compétences en tant que data scientist - machine learning
+description: L'objectif ici est de vous montrer mes compétences en tant que data scientist - machine learning.
