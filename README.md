@@ -1,4 +1,4 @@
-# SCFlorian
+# Portfolio - Data Science & Machine Learning
 
 Bienvenue sur mon portfolio de Data Scientist.
 
