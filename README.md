@@ -1,6 +1,4 @@
-# Portfolio - Data Science & Machine Learning
+# Bienvenue sur mon portfolio de Data Scientist.
 
-Bienvenue sur mon portfolio de Data Scientist.
-
-Je suis actuellement en formation Data Scientist Machine Learning chez OpenClassrooms.
+Après 5 années d'expérience en tant que Contrôleur de Gestion / Business Analyst dans le secteur du transport, je me suis accordé une parenthèse de 2 ans dédiée au voyage, incluant plusieurs mois en Australie où j'ai conjugué découverte et expérience professionnelle. Forte de cette double expérience, professionnelle et humaine, j'ai entrepris une reconversion vers la Data Science et le Machine Learning via la formation d'OpenClassrooms, avec l'ambition de transformer la donnée en leviers de décision concrets.
 
