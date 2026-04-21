@@ -1,6 +1,6 @@
 remote_theme: pages-themes/cayman@v0.2.0
 
-title: Florian SCHORER - Data Scientist & Machine Learning
+title: Florian SCHORER
 description: L'objectif ici est de vous montrer mes compétences en tant que data scientist - machine learning.
 
-{{ site.my_linkedin_link }}: https://www.linkedin.com/in/florianschorer/
+my_linkedin_link: https://www.linkedin.com/in/florianschorer/
