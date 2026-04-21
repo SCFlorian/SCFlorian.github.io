@@ -8,7 +8,10 @@ title: systeme_recommandation
 
 ## Contexte et analyse des besoins
 
-1. Présentation
+1. [Présentation](#présentation)
+2. [Collecte et analyse du besoin métier](#collecte-et-analyse-du-besoin-métier)
+
+### Présentation
 
 **Secteur d'activité**
 
@@ -27,8 +30,9 @@ Lors du lancement de l'application aux utilisateurs il faudra bien penser à gé
 | ---      | ---       |
 | Fichier excel à disposition avec plusieurs onglets | Mais pas de temporalité indiquée |
 | Prototype d'un système de récupération | Mais reste trop simpliste et pas adapté aux besoins |
-| Fichiers à dispoition : excel + screen de reddit | Pas de nettoyage réalisée |
+| Fichiers à disposition : excel + screen de reddit | Pas de nettoyage réalisée |
 
-2. Collecte et analyse du besoin métier
+
+### Collecte et analyse du besoin métier
 
 
