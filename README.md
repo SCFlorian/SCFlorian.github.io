@@ -1,8 +1,4 @@
-<div align="center">
-  <a href="/" class="btn">🏠 Accueil</a>
-  <a href="/systeme_recommandation" class="btn">🎯 Projet SportSee</a>
-  <a href="https://www.linkedin.com/in/florianschorer/" class="btn">🔗 LinkedIn</a>
-</div>
+[🏠 Accueil](/) | [🎯 systeme_recommandation](/systeme_recommandation)
 
 # Bienvenue sur mon Portfolio
 
