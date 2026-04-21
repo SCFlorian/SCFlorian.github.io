@@ -10,6 +10,7 @@ title: systeme_recommandation
 
 1. [Présentation](#présentation)
 2. [Collecte et analyse du besoin métier](#collecte-et-analyse-du-besoin-métier)
+3. [Audit de la solution data existante](#audit-de-la-solution-data-existante)
 
 ### Présentation
 
@@ -62,3 +63,42 @@ Dix besoins métier ont été identifiés, puis positionnés dans une matrice Va
 | Maîtriser les coûts d'inférence  | Quick win | Blocage réel rencontré (limite tokens Mistral) |
 
 **Plan d'action déduit** : prioriser les quick wins pour débloquer rapidement la situation, puis engager les projets stratégiques qui nécessitent la refonte architecturale.
+
+### Audit de la solution data existante
+
+#### Solution actuelle
+
+Le prototype reçu en entrée de mission présente les caractéristiques suivantes :
+
+**Outils et technologies**
+
+- Langage : Python
+- Interface utilisateur : Streamlit
+- LLM : Mistral mistral-small-latest
+- Embeddings : Mistral mistral-embed
+- Orchestration : LangChain
+- Base vectorielle : FAISS
+- Gestion des dépendances : requirements.txt
+
+**Pipeline d'exploitation des données**
+
+1. Chargement des documents PDF (captures d'écran de fils Reddit) et d'un fichier Excel (statistiques NBA par joueur).
+2. Découpage en chunks textuels (le fichier Excel est traité comme du texte brut).
+3. Création d'embeddings Mistral.
+4. Indexation dans FAISS.
+5. À la requête utilisateur : recherche sémantique → passage du contexte au LLM → génération de la réponse.
+
+**Organisation du projet**
+
+Structure monolithique, code regroupé dans quelques fichiers (`MistralChat.py`, `indexer.py`, `utils/vector_store.py`, `utils/data_loader.py`) sans séparation claire des responsabilités, pas de tests, pas de logs, pas d'API.
+
+### Évaluation RAGAS du prototype existant
+
+Quatre critères ont été retenus : performance qualitative (via RAGAS), robustesse, coût et scalabilité, pertinence métier.
+
+**Résultats de l'évaluation RAGAS sur le prototype**
+
+Évaluation sur 20 questions réparties en trois catégories (faciles, compliquées, bruitées) :
+
+![alt text](assets/moyenne_ragas_first_evaluation.png)
+
