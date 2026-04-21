@@ -2,7 +2,7 @@
 title: Projet
 ---
 
-[🏠 Accueil](/) | [🎯 Projet RAG](/projet)
+[🏠 Accueil](/) | [🎯 Projet](/projet)
 
 # Rapport de conduite de projet Data & ML
 
