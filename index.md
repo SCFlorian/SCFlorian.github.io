@@ -1,7 +1,7 @@
 ---
 ---
 
-[🏠 Accueil](/) | [🎯 Système de recommandation](/systeme_recommandation)
+[🏠 Accueil](/) | [🎯 Projet technique](/systeme_recommandation) | [🎯 Projets réalisés](/formation_projet) | [Contact](/contact)
 
 # Bienvenue sur mon Portfolio
 
@@ -19,11 +19,6 @@ la donnée en leviers de décision concrets.
 
 - [**Système de Recommandation & RAG**](/systeme_recommandation) : Mise en place
 d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
-
-## Me contacter
-
-- [Mon profil LinkedIn](https://www.linkedin.com/in/florianschorer/)
-- [Mon GitHub](https://github.com/SCFlorian)
 
 ## Expérience
 
