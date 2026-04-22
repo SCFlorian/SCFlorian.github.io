@@ -31,8 +31,8 @@ title: systeme_recommandation
 
 - Maturité data & ML :
 
-    - Forces : une base de données statistiques NBA bien structurée, une veille active sur les forums et archives textuelles, et un premier prototype de chatbot déjà réalisé.
-    - Faiblesses : le prototype existant n'a jamais été évalué objectivement, pas d'observabilité en production, pas de monitoring des coûts d'inférence, absence de validation stricte des entrées/sorties, et pas de processus industrialisé d'intégration des évolutions du modèle.
+    - **Forces** : une base de données statistiques NBA bien structurée, une veille active sur les forums et archives textuelles, et un premier prototype de chatbot déjà réalisé.
+    - **Faiblesses** : le prototype existant n'a jamais été évalué objectivement, pas d'observabilité en production, pas de monitoring des coûts d'inférence, absence de validation stricte des entrées/sorties, et pas de processus industrialisé d'intégration des évolutions du modèle.
 
 ## Collecte et analyse du besoin métier
 
@@ -60,6 +60,7 @@ Dix besoins métier ont été identifiés, puis positionnés dans une matrice Va
 | --- | --- | --- |
 | Fiabiliser les réponses (réduire les hallucinations) | Projet stratégique | Problème n°1 remonté, nécessite une refonte RAG complète |
 | Améliorer les réponses sur questions statistiques | Projet stratégique | Nécessite base SQL + routeur |
+| Mise en place d'une base de données SQL | Quick win | Nécessite une database comme PostgreSQL |
 | Création d'un environnement structuré | Projet stratégique | Séparation rag de la logique API et interface |
 | Maintenir la qualité des réponses textuelles  | À éviter | Déjà fonctionnel, à voir dans les perspectives |
 | Gérer les questions mixtes (texte + chiffres)  | Projet stratégique | Routeur, dépend de l'architecture dual-source |
@@ -107,14 +108,19 @@ Quatre critères ont été retenus : performance qualitative (via RAGAS), robust
 Évaluation sur 20 questions réparties en trois catégories (faciles, compliquées, bruitées) :
 
 - **Au global** :
+
 ![alt text](assets/moyenne_ragas_first_evaluation.png)
 
 Answer relevancy (0,92) : Le LLM comprend bien la question
+
 Faithfulness (0,17) : Hallucinations massives, les réponses ne s'appuient pas sur le contexte
+
 Context precision (0,20) : Retrieval bruité, beaucoup de documents non pertinents ramenés
+
 Context recall (0,33) : Informations clés souvent absentes du contexte
 
-- **Par catégorie de question** : 
+- **Par catégorie de question** :
+
 ![alt text](assets/moyenne_ragas_par_categorie_first_evaluation.png.png)
 
 **Constat principal** : le prototype produit des réponses sémantiquement cohérentes avec la question mais factuellement non fiables. Le modèle compense le manque d'information pertinente en extrapolant à partir de ses connaissances internes, ce qui est inacceptable sur un cas d'usage de restitution statistique.
@@ -181,7 +187,7 @@ Trois approches ont été envisagées pour répondre au besoin :
 
 ## Proposition de démarche projet
 
-### **Roadmap de mise en œuvre**
+### **Roadmap de mise en œuvre du nouveau prototype - sur la partie ML**
 
 | Phase | Contenu | Livrable | Durée indicative |
 | --- | --- | --- | --- |
@@ -198,13 +204,17 @@ Trois approches ont été envisagées pour répondre au besoin :
 La démarche retenue combine deux approches complémentaires :
 
 - **CRISP-DM** pour la structuration globale du projet data : compréhension métier → compréhension des données → préparation → modélisation → évaluation → déploiement.
+
+![alt text](assets/methode_crisp.png)
+
+
 - **Agile** pour les cycles d'amélioration itératifs : sprints courts, démonstrations intermédiaires, ajustement du périmètre selon les résultats d'évaluation RAGAS.
 
 ## Aide à la prise de décision
 
 ### **Synthèse des risques et opportunités**
 
-| Type | Élément | Impact | Probabilité | Mitigation |
+| Type | Élément | Impact | Probabilité | Définition |
 | --- | --- | --- | --- | --- |
 | Risque | Régression de qualité après migration LLM | Élevé | Moyenne | Évaluation RAGAS avant/après, seuil de blocage |
 | Risque | Explosion des coûts d'inférence | Moyen | Moyenne | Monitoring des tokens via Logfire, alertes budgétaires |
@@ -213,20 +223,22 @@ La démarche retenue combine deux approches complémentaires :
 | Opportunité | Extension à d'autres sports | — | — | Architecture réutilisable |
 | Opportunité | Vente de l'API à des tiers | — | — | Documentation Swagger déjà en place |
 
-### **Scénarios budgétaires**
+### **Scénarios budgétaires sur la partie ML**
 
 Trois scénarios d'implémentation ont été étudiés, couvrant l'essentiel des coûts sur la première année d'exploitation :
 
-| Poste | Scénario minimal | Scénario standard | Scénario premium |
-| --- | --- | --- | --- |
-| Développement (1 Data Scientist, 7 sem.) | 10 000 € | 10 000 € | 10 000 € |
-| LLM (Groq — tokens Llama 3.3) | 0 € (plan gratuit) | 600 € / an | 3 000 € / an |
-| Hébergement (VPS + PostgreSQL) | 120 € / an | 600 € / an | 2 400 € / an |
-| Observabilité (Logfire) | 0 € (plan Hobby) | 360 € / an | 1 200 € / an |
-| Maintenance (0,5 j/sem) | 0 € | 6 000 € / an | 12 000 € / an |
-| **Total année 1** | **≈ 10 120 €** | **≈ 17 560 €** | **≈ 28 600 €** |
+![alt text](assets/tableau_cout_financier.png)
 
-*Les montants sont des ordres de grandeur*
+- **Scénario minimal** (≈ 10 120 €) : adapté à une phase de démonstration interne ou de preuve de concept. Le système fonctionne en plan gratuit chez Groq et Logfire, l'hébergement se limite à un petit VPS, et aucune maintenance n'est externalisée. Cette option permet de valider la valeur métier avant d'investir davantage, mais expose à des plafonds de tokens et à une absence de support en cas d'incident.
+- **Scénario standard** (≈ 17 560 €) : recommandé pour un passage en production mesuré. Les forfaits payants chez Groq et Logfire garantissent un volume de requêtes confortable et un monitoring complet. Une demi-journée de maintenance hebdomadaire permet de traiter les incidents, d'itérer sur les évaluations RAGAS et d'ajuster les prompts. C'est le meilleur compromis entre coût et qualité de service pour une première mise en production.
+- **Scénario premium** (≈ 28 600 €) : dimensionné pour un usage grand public à forte volumétrie. L'infrastructure cloud renforcée, les quotas LLM étendus et une journée de maintenance hebdomadaire garantissent une disponibilité élevée et une réactivité sur les évolutions. Ce scénario est pertinent si le chatbot devient un produit commercialisé ou intégré à l'application principale de SportSee.
+- **La maintenance** va permettre principalement 4 choses :
+    - Surveillance des performances et détection de dérive
+    - Gestion des incidents et support
+    - Enrichissement du jeu d'évaluation
+    - Ajustement des prompts et du routeur
+
+*Les montants sont des ordres de grandeur.*
 
 ### **Indicateurs de succès**
 
@@ -303,7 +315,7 @@ Le tableau de bord Logfire centralise cinq familles d'indicateurs :
 
 ---
 
-## Évaluation RAGAS du nouveau système
+## Évaluation RAGAS du nouveau système - premiers résultats
 
 Le nouveau système a été évalué sur les mêmes 20 questions que le prototype, afin de garantir une comparaison rigoureuse.
 
@@ -335,10 +347,10 @@ Les résultats démontrent une **amélioration significative du modèle** :
 
 | Métrique | Prototype | Nouveau système | Évolution |
 | --- | --- | --- | --- |
-| Faithfulness | 0,17 | *(valeur v2)* | Forte hausse |
-| Context precision | 0,20 | *(valeur v2)* | Forte hausse |
-| Context recall | 0,33 | *(valeur v2)* | Forte hausse |
-| Answer relevancy | 0,92 | *(valeur v2 > 0,80)* | Légère baisse |
+| Faithfulness | 0,17 | 0,96 | Forte hausse |
+| Context precision | 0,20 | 0,90 | Forte hausse |
+| Context recall | 0,33 | 0,88 | Forte hausse |
+| Answer relevancy | 0,92 | 0,82 | Légère baisse |
 
 **Lecture des résultats** :
 
