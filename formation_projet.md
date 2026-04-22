@@ -1,4 +1,12 @@
-# Réalisation de ces projets dans la cadre de ma formation Data Scientist-Machine Learning
+---
+title: Réalisation de ces projets dans la cadre de ma formation Data Scientist-Machine Learning
+---
+
+---
+
+[🏠 Accueil](/)
+
+---
 
 ## Système de recommandation agricole 
 

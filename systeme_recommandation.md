@@ -1,8 +1,12 @@
 ---
-title: systeme_recommandation
+title: Projet technique détaillé
 ---
 
-[🏠 Accueil](/) | [🎯 systeme_recommandation](/systeme_recommandation)
+---
+
+[🏠 Accueil](/)
+
+---
 
 # Rapport de conduite de projet Data & ML
 
