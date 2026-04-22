@@ -10,6 +10,13 @@
   color: #606060;
 }
 
+.main-content .btn {
+  color: #606060 !important;           /* Force le gris des titres */
+  border: 1px solid #606060 !important; /* Force la bordure grise */
+  background: none !important;          /* Enlève tout fond par défaut */
+}
+
 .main-content .btn:hover {
-  color: #606060;;           /* Texte blanc au survol */
+  color: #ffffff !important;            /* Texte blanc au survol */
+  background-color: #606060 !important;  /* Fond gris au survol */
 }
