@@ -9,3 +9,8 @@
 .main-content h4 {
   color: #606060;
 }
+
+.main-content .btn:hover {
+  color: #ffffff;           /* Texte blanc au survol */
+  background-color: #606060; /* Fond gris au survol */
+}
