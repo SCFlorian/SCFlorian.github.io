@@ -25,5 +25,6 @@ On trouvera à l'intérieur de cette carte :
 - Mise en valeur des softs skills
 - Présentation rapide des expériences passées
 
-![alt text](assets/carte_mentale.png)
+<img src="/assets/carte_mentale.png" alt="Carte mentale" style="width: 100%; max-width: 100%; height: auto;">
+
 
