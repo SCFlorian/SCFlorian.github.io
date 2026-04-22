@@ -1,7 +1,11 @@
 ---
 ---
 
-[🏠 Accueil](/) | [🎯 Projet technique](/systeme_recommandation) | [🎯 Projets réalisés](/formation_projet) | [Contact](/contact)
+---
+
+[🏠 Accueil](/) · [⚙️ Projet technique](/systeme_recommandation) · [📁 Projets réalisés](/formation_projet) · [📞 Contact](/contact)
+
+---
 
 # Bienvenue sur mon Portfolio
 
@@ -15,10 +19,14 @@ humaine, j'ai entrepris une reconversion vers la Data Science et le Machine
 Learning via la formation d'OpenClassrooms, avec l'ambition de transformer
 la donnée en leviers de décision concrets.
 
+--- 
+
 ## Projets phares
 
 - [**Système de Recommandation & RAG**](/systeme_recommandation) : Mise en place
 d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
+
+--- 
 
 ## Expérience
 
@@ -32,6 +40,8 @@ Mes missions au sein du CDG sont partagées entre du corporate et de l'opératio
 - Mise en place de projets
 - Optimisation & automatisation de fichiers existants
 - Utilisation quotidienne : Pack Office, SQL, SAP, Microstrategy
+
+--- 
 
 ## Formation
 
