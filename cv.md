@@ -1,5 +1,5 @@
 ---
-title: Me contacter
+title: CV
 ---
 
 ---
@@ -15,11 +15,6 @@ title: Me contacter
 
 ---
 
-# Comment me contacter ?
+# Cliquez ci-dessous pour voir mon CV
 
-- [Mon profil LinkedIn](https://www.linkedin.com/in/florianschorer/)
-
-# Comment voir mes réalisations ?
-
-- [Mon GitHub](https://github.com/SCFlorian)
-- [Mon HuggingFace](https://huggingface.co/FlorianSC) 
+  <a href="/CV.pdf" class="btn" target="_blank">📄 CV</a>
