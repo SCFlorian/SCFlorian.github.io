@@ -18,7 +18,9 @@ title: Réalisation de ces projets dans la cadre de ma formation Data Scientist-
 
 - [Sytème de recommandation](https://github.com/SCFlorian/Systeme_recommandation_agricole)
 
-<a href="/assets/carte_mentale.png" class="btn">📄 Rapport métier</a>
+<div style="text-align: center; margin: 20px 0;">
+  <a href="/assets/rapport_metier.md" class="btn">📄 Rapport métier</a>
+</div>
 
 ## Classification d'images médicale
 
