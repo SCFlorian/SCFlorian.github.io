@@ -17,4 +17,4 @@ title: CV
 
 # Cliquez ci-dessous pour voir mon CV
 
-  <a href="/CV.pdf" class="btn" target="_blank">📄 CV</a>
+  <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV</a>

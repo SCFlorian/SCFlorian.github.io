@@ -17,20 +17,20 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 
 ## Système de recommandation agricole 
 
-[![GitHub](https://img.shields.io/badge/GitHub-Systeme_recommandation_agricole-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Systeme_recommandation_agricole)
+[![GitHub](https://img.shields.io/badge/GitHub-Système_recommandation_agricole-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Systeme_recommandation_agricole)
 
 Ce projet a pour but de réaliser une application web simple et intuitive pour aider les agriculteurs à prendre de meilleurs décisions. L'application aura deux fonctions au sein de la même interface :
 
 - Fonction de prédiction : Permettre à un utilisateur de sélectionner une culture spécifique, de renseigner les conditions de sa parcelle (température, usage de pesticides, etc.) et d'obtenir une estimation chiffrée du rendement attendu.
 - Fonction de recommandation : L'utilisateur renseigne uniquement les conditions de sa parcelle, et l'application lui recommande la culture la plus rentable en simulant le rendement pour toutes les cultures possibles et en affichant un classement.
 
-  <a href="/rapport_metier.pdf" class="btn" target="_blank">📄 Rapport métier</a>
+  <a href="/assets/pdf/rapport_metier.pdf" class="btn" target="_blank">📄 Rapport métier</a>
 
 ---
 
 ## Évaluez les performances d'un LLM
 
-[![GitHub](https://img.shields.io/badge/GitHub-Evaluation_LLM-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Evaluation_LLM)
+[![GitHub](https://img.shields.io/badge/GitHub-Évaluation_LLM-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Evaluation_LLM)
 
 Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant la technique de Retrieval-Augmented Generation (RAG) pour fournir des réponses précises et contextuelles à partir d'une base de connaissances personnalisée. L'objectif est de reprendre un prototype réalisé qui était fonctionnel et de procéder à des améliorations afin d'obtenir de meilleurs résultats. Les améliorations seront visibles avec une comparaison des métriques Ragas sur le prototype vs la nouvelle structure du projet.
 
@@ -48,7 +48,7 @@ Le système utilise une architecture RAG (Retrieval-Augmented Generation) pour g
 
 ## Déploiement d'un modèle de scoring
 
-- [Déploiement modèle scoring](https://github.com/SCFlorian/Deploiement_modele_scoring)
+[![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_scoring-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_scoring)
 
 Précédemment nous avons réalisé un modèle de scoring en partant du projet Home Credit Default Risk de Kaggle. Nous allons reprendre le meilleur modèle de ce projet afin de le déployer.
 
@@ -68,7 +68,7 @@ Les objectifs sont les suivants :
 
 ## Classification d'images médicale
 
-- [Apprentissage semi-supervisé](https://github.com/SCFlorian/Apprentissage_semi_supervise)
+[![GitHub](https://img.shields.io/badge/GitHub-Apprentissage_semi_supervisé-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Apprentissage_semi_supervise)
 
 L'objectif ici est d'explorer la possibilité d'automatiser la détection de tumeurs au cerveau. Un ensemble conséquent de radios a été collecté : la majorité de ces images ne dispose d’aucun étiquetage, tandis qu’un sous-ensemble limité a été annoté par des radiologues experts.
 
@@ -83,7 +83,7 @@ La mission est :
 
 ## Modèle de scoring avec suivi MLFlow
 
-- [Modèle scoring MLFlow](https://github.com/SCFlorian/Modele_scoring_MLFlow)
+[![GitHub](https://img.shields.io/badge/GitHub-Modèle_scoring_MLFlow-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Modele_scoring_MLFlow)
 
 L'objectif de ce projet est de réaliser un modèle de scoring et un suivi sur MlFlow à partir du projet Home Credit Default Risk sur Kaggle.
 
@@ -97,7 +97,7 @@ La problématique :
 
 ## Déploiement d'un modèle de machine learning
 
-- [Déploiement modèle machine learning](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
+[![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_machine_learning-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
 
 Ce projet reprend le modèle développé dans « Classifiez automatiquement des informations » et le déploie sous la forme d’une API FastAPI accessible en ligne via Hugging Face Spaces.
 
@@ -111,7 +111,7 @@ L’objectif :
 
 ## Classifiez automatiquement des informations
 
-- [Classifiez automatiquement des informations](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
+[![GitHub](https://img.shields.io/badge/GitHub-Classifiez_automatiquement_des_informations-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
 
 L’objectif de ce projet est de prédire la probabilité de démission des employés de l’ESN TechNova Partners. Pour cela, nous explorons les données RH, appliquons plusieurs modèles de machine learning et comparons leurs performances afin d’identifier les facteurs clés influençant les départs.
 
@@ -119,7 +119,7 @@ L’objectif de ce projet est de prédire la probabilité de démission des empl
 
 ## Anticipez les besoins en consommation des bâtiments
 
-- [Anticipez besoins consommations bâtiments](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
+[![GitHub](https://img.shields.io/badge/GitHub-Anticipez_besoins_consommations_bâtiments-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
 
 L’objectif de ce projet est de développer un modèle de prédiction de la consommation énergétique des bâtiments à partir de données publiques de la ville de Seattle (2016).
 
