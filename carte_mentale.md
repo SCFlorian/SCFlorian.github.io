@@ -32,78 +32,16 @@ On trouvera à l'intérieur de cette carte :
        style="width: 100%; height: auto; cursor: zoom-in;">
 </a>
 
-# Les éléments sous forme de liste 
+# Détail par bloc
 
-## Formation Data Scientist - Machine Learning
-- Analyse des données
-  - Gestion des valeurs manquantes
-  - Gestion des NaN
-  - Anayse de la distribution des variables
-  - Analyse des corrélations
-- Modélisation
-  - Création de pipeline ML
-    - Modèle supervisé
-      - Modèle de classification
-      - Modèle de régression
-    - Modèle semi supervisé
-      - Deep Learning
-          - Classification image médicale
-    - Mise en place de système RAG
-      - Evaluer les performances
-      - Création d'un agent SQL
-- Déploiement
-  - Mise en place d'API
-    - Utilisation de FastAPI
-      - Documentation Swagger
-      - Utilisation de Postman
-  - Déploiement sur Hugging Face
-    - Plusieurs projets sous HF Spaces
-    - Plusieurs modèles ML sous HF Models
-  - Création de conteneur Docker
-- Gestion de projet
-  - Présentation d'un projet du prototype au projet final
+---
 
-## Compétences
-- Anglais niveau B2
-- Espagnol niveau A2
-- Outils CDG
-  - Excel +++
-  - Microstrategy ++
-- Data Science
-  - Python
-    - Pandas
-    - Numpy
-    - Matplotlib
-  - SQL
-  - FastAPI
+<div align="center">
+  <a href="/competences" class="btn">🎯 Compétences</a>
+  <a href="/experiences" class="btn">👔 Expérienes passées</a>
+  <a href="/formation" class="btn">🎒 Formation</a>
+  <a href="/reflexion" class="btn">🤔 Réflexion</a>
+    <a href="/soft_skills" class="btn">🤝 Mes soft skills</a>
+</div>
 
-## Réflexion sur la data science
-- Perception du métier
-  - Focus modélisation
-  - Besoin de maîtriser parfaitement les outils à disposition
-- Évolution de la perception
-  - Besoin d'une forte analyse des données
-  - Domaine très large avec beaucoup de spécialités
-  - Besoin de s'adpater à une multide d'outils sans forcément les connaître
-  - Être curieux sur les dernières avancées technologiques
-- Perspective d'amélioration
-  - Accepter de ne pas tout maîtriser
-  - Lecture d'articles scientifiques
-  - Projets personnels afin de se perfectionner
-
-## Expérience professionelle
-- 5 années en contrôle de gestion
-  - Clôture comptable
-  - Analyse de rentabilité
-  - Gestion de projets
-  - Création de tableaux de bord
-
-## Mes soft skills
-- Esprit d'analyse
-- Curiosité
-- Travail en équipe
-- Adaptabilité
-- Gestion de projet
-- Créativité
-- Rigueur, détail
-
+---
