@@ -17,7 +17,7 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 
 ## Système de recommandation agricole 
 
-- [Sytème de recommandation](https://github.com/SCFlorian/Systeme_recommandation_agricole)
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/SCFlorian/Systeme_recommandation_agricole)
 
 Ce projet a pour but de réaliser une application web simple et intuitive pour aider les agriculteurs à prendre de meilleurs décisions. L'application aura deux fonctions au sein de la même interface :
 
