@@ -30,7 +30,7 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
 
 ## Évaluez les performances d'un LLM
 
-- [Evaluation LLM](https://github.com/SCFlorian/Evaluation_LLM)
+[![GitHub](https://img.shields.io/badge/GitHub-Evaluation_LLM-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Evaluation_LLM)
 
 Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant la technique de Retrieval-Augmented Generation (RAG) pour fournir des réponses précises et contextuelles à partir d'une base de connaissances personnalisée. L'objectif est de reprendre un prototype réalisé qui était fonctionnel et de procéder à des améliorations afin d'obtenir de meilleurs résultats. Les améliorations seront visibles avec une comparaison des métriques Ragas sur le prototype vs la nouvelle structure du projet.
 
@@ -38,7 +38,7 @@ Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant
 
 ## Déploiement d'un système RAG
 
-- [Déploiement d'un système RAG](https://github.com/SCFlorian/Deploiement_systeme_RAG)
+[![GitHub](https://img.shields.io/badge/GitHub-Déploiement_d_'_un_système_RAG-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_systeme_RAG)
 
 Ce projet est une Preuve de Concept (POC). Il s'agit d'un chatbot intelligent capable de recommander des événements culturels à Paris (concerts, théâtres, expositions) en se basant sur des données fraîches via l'API OpenAgenda.
 
