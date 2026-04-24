@@ -18,6 +18,9 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 ## Système de recommandation agricole 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Système_recommandation_agricole-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Systeme_recommandation_agricole)
+[![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-md-dark.svg)](https://huggingface.co/FlorianSC/models)
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/FlorianSC/agritech-interface?logs=container)
+
 
 Ce projet a pour but de réaliser une application web simple et intuitive pour aider les agriculteurs à prendre de meilleurs décisions. L'application aura deux fonctions au sein de la même interface :
 

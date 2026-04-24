@@ -52,14 +52,27 @@ d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 
 ### Contrôleur de Gestion / Business Analyst
 
+*Colis Privé / 07.2021 - 12.2022*
+*HOPPS Group / 01.2018 - 06.2021*
+
 Mes missions au sein du CDG sont partagées entre du corporate et de l'opérationnel :
 
+- Réalisation de cahiers des charges
+- Mise en place et animation de projets d’envergure
+- Création de données budgétaires
+- Suivi et analyse de données financières et opérationnelles
 - Contrôle de la clôture comptable
 - Création de tableaux de bord pour le CODIR
-- Création de données budgétaires
-- Mise en place de projets
-- Optimisation & automatisation de fichiers existants
-- Utilisation quotidienne : Pack Office, SQL, SAP, Microstrategy
+- Optimisation & automatisation de fichiers et process
+
+### Contrôleur de Gestion opérationnel
+
+*Colis Privé / 08.2017 - 12.2017*
+
+- Analyse du dernier kilomètre
+- Etudes et analyses financières
+- Implication/aide au développement de projets opérationnels
+- Création de reportings financiers automatisés
 
 --- 
 
