@@ -15,7 +15,7 @@ title: Carte conceptuelle
 
 ---
 
-## Carte conceptuelle récapitulant mes compétences et mon parcours
+# Carte conceptuelle récapitulant mes compétences et mon parcours
 
 On trouvera à l'intérieur de cette carte :
 
@@ -32,9 +32,9 @@ On trouvera à l'intérieur de cette carte :
        style="width: 100%; height: auto; cursor: zoom-in;">
 </a>
 
-## Les éléments sous forme de liste 
+# Les éléments sous forme de liste 
 
-### Formation Data Scientist - Machine Learning
+## Formation Data Scientist - Machine Learning
 - Analyse des données
   - Gestion des valeurs manquantes
   - Gestion des NaN
@@ -63,7 +63,7 @@ On trouvera à l'intérieur de cette carte :
 - Gestion de projet
   - Présentation d'un projet du prototype au projet final
 
-### Compétences
+## Compétences
 - Anglais niveau B2
 - Espagnol niveau A2
 - Outils CDG
