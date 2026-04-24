@@ -15,6 +15,20 @@ title: Carte conceptuelle
 
 ---
 
+# Détail par bloc
+
+---
+
+<div align="center">
+  <a href="/details_carte/competences" class="btn">🎯 Compétences</a>
+  <a href="/details_carte/experiences" class="btn">👔 Expériences passées</a>
+  <a href="/details_carte/formation" class="btn">🎒 Formation</a>
+  <a href="/details_carte/reflexion" class="btn">🤔 Réflexion</a>
+    <a href="/details_carte/soft_skills" class="btn">🤝 Mes soft skills</a>
+</div>
+
+---
+
 # Carte conceptuelle récapitulant mes compétences et mon parcours
 
 On trouvera à l'intérieur de cette carte :
@@ -32,16 +46,3 @@ On trouvera à l'intérieur de cette carte :
        style="width: 100%; height: auto; cursor: zoom-in;">
 </a>
 
-# Détail par bloc
-
----
-
-<div align="center">
-  <a href="/competences" class="btn">🎯 Compétences</a>
-  <a href="/experiences" class="btn">👔 Expérienes passées</a>
-  <a href="/formation" class="btn">🎒 Formation</a>
-  <a href="/reflexion" class="btn">🤔 Réflexion</a>
-    <a href="/soft_skills" class="btn">🤝 Mes soft skills</a>
-</div>
-
----
