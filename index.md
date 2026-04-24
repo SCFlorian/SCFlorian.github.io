@@ -52,8 +52,8 @@ d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 
 ### Contrôleur de Gestion / Business Analyst
 
-*Colis Privé / 07.2021 - 12.2022*
-*HOPPS Group / 01.2018 - 06.2021*
+- *Colis Privé / 07.2021 - 12.2022*
+- *HOPPS Group / 01.2018 - 06.2021*
 
 Mes missions au sein du CDG sont partagées entre du corporate et de l'opérationnel :
 
