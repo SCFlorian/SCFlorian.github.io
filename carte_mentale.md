@@ -2,12 +2,34 @@
 title: Carte conceptuelle
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
 
 <style>
-.markmap > svg {
+.markmap-wrapper {
+  position: relative;
   width: 100%;
-  height: 700px;
+  height: 800px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  margin: 20px 0;
+}
+
+.markmap-wrapper .markmap,
+.markmap-wrapper .markmap > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.mm-toolbar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
 }
 </style>
 
@@ -25,8 +47,9 @@ title: Carte conceptuelle
 
 # Carte conceptuelle interactive
 
-Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez la molette pour zoomer/dézoomer**, **glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
+Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez les boutons en bas à droite** pour zoomer ou recentrer la carte. Cliquez sur les nœuds pour plier/déplier les branches, et sur les liens en bleu pour accéder aux projets.
 
+<div class="markmap-wrapper">
 <div class="markmap">
 <script type="text/template">
 ---
@@ -47,7 +70,7 @@ markmap:
 - Créativité
 - Rigueur, détail
 
-## 🔍 Analyse exploratoire
+## 🔍 EDA
 - **Stack**
   - Pandas, NumPy
   - Matplotlib, Seaborn
@@ -59,28 +82,31 @@ markmap:
 - **Projet**
   - [AgriTech - EDA](/systeme_recommandation)
 
-## 🧠 Modélisation supervisée
+## 🗄️ Bases de données
 - **Stack**
-  - scikit-learn
-  - XGBoost, LightGBM
+  - PostgreSQL, SQL
+  - SQLite
 - **Compétences**
-  - Pipelines ML
-  - Classification & régression
-  - Validation croisée
+  - Requêtes complexes
+  - Modélisation relationnelle
+  - Optimisation
 - **Projet**
-  - [Système de recommandation](/systeme_recommandation)
+  - [Agent SQL](/systeme_recommandation)
 
-## 🖼️ Deep Learning
+## 🚀 MLOps
 - **Stack**
-  - TensorFlow, Keras
+  - MLflow, Docker
+  - FastAPI, GitHub Actions
+  - Hugging Face Spaces
 - **Compétences**
-  - CNN
-  - Transfer Learning
-  - Apprentissage semi-supervisé
+  - Tracking d'expériences
+  - Conteneurisation
+  - APIs REST avec Swagger
+  - CI/CD
 - **Projet**
-  - [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
+  - [Déploiement HF](https://huggingface.co/FLORIANSC)
 
-## 🤖 IA générative & RAG
+## 🤖 GenAI / RAG
 - **Stack**
   - LangChain, FAISS
   - RAGAS
@@ -90,30 +116,51 @@ markmap:
   - Agents SQL
 - **Projet**
   - [Système RAG hybride](/systeme_recommandation)
-
-## 🚀 MLOps & déploiement
-- **Stack**
-  - MLflow, Docker
-  - FastAPI, GitHub Actions
-  - Hugging Face Spaces
-- **Compétences**
-  - Tracking d'expériences
-  - Conteneurisation
-  - APIs REST
-  - CI/CD
-- **Projet**
-  - [Déploiement HF](https://huggingface.co/FLORIANSC)
-
-## 🗄️ Bases de données
-- **Stack**
-  - PostgreSQL, SQL
-- **Compétences**
-  - Requêtes complexes
-  - Modélisation relationnelle
-- **Projet**
-  - [Agent SQL](/systeme_recommandation)
 </script>
 </div>
+</div>
+
+<script>
+(function() {
+  function tryAttachToolbar() {
+    var wrapper = document.querySelector('.markmap-wrapper');
+    var svg = wrapper ? wrapper.querySelector('svg') : null;
+    
+    if (!wrapper || !svg || !window.markmap || !window.markmap.Toolbar) {
+      setTimeout(tryAttachToolbar, 500);
+      return;
+    }
+    
+    if (wrapper.querySelector('.mm-toolbar')) {
+      return;
+    }
+    
+    try {
+      var mm = svg.__markmap__ || (svg.__data__ && svg.__data__.markmap);
+      if (!mm) {
+        setTimeout(tryAttachToolbar, 500);
+        return;
+      }
+      
+      var toolbar = new window.markmap.Toolbar();
+      toolbar.attach(mm);
+      var el = toolbar.render();
+      el.classList.add('mm-toolbar');
+      wrapper.appendChild(el);
+    } catch (e) {
+      console.error('Toolbar error:', e);
+    }
+  }
+  
+  if (document.readyState === 'complete') {
+    setTimeout(tryAttachToolbar, 1000);
+  } else {
+    window.addEventListener('load', function() {
+      setTimeout(tryAttachToolbar, 1000);
+    });
+  }
+})();
+</script>
 
 ---
 
