@@ -4,6 +4,13 @@ title: Carte conceptuelle
 
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
 
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 800px;
+}
+</style>
+
 ---
 
 <div align="center">
@@ -20,12 +27,12 @@ title: Carte conceptuelle
 
 Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez la molette pour zoomer/dézoomer**, **glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
 
-<div class="markmap" style="height: 800px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #fafafa; margin: 20px 0;">
+<div class="markmap">
 <script type="text/template">
 ---
 markmap:
   colorFreezeLevel: 2
-  initialExpandLevel: 2
+  initialExpandLevel: 3
   maxWidth: 300
 ---
 
@@ -60,7 +67,6 @@ markmap:
   - Pipelines ML
   - Classification & régression
   - Validation croisée
-  - Tuning d'hyperparamètres
 - **Projet**
   - [Système de recommandation](/systeme_recommandation)
 
@@ -68,7 +74,7 @@ markmap:
 - **Stack**
   - TensorFlow, Keras
 - **Compétences**
-  - Réseaux convolutifs (CNN)
+  - CNN
   - Transfer Learning
   - Apprentissage semi-supervisé
 - **Projet**
@@ -93,7 +99,7 @@ markmap:
 - **Compétences**
   - Tracking d'expériences
   - Conteneurisation
-  - APIs REST avec Swagger
+  - APIs REST
   - CI/CD
 - **Projet**
   - [Déploiement HF](https://huggingface.co/FLORIANSC)
