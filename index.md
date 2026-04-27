@@ -60,7 +60,7 @@ d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-7FC8FF?style=for-the-badge&logo=langchain&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/LangChaSQLAlchemyin-D71F00?style=for-the-badge&logo=sqlachemy&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlachemy&logoColor=white)
 
 ## Expérience
 

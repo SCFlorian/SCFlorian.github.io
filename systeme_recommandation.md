@@ -67,20 +67,7 @@ La démarche de recueil s'est appuyée sur trois sources complémentaires :
 
 Dix besoins métier ont été identifiés, puis positionnés dans une matrice Valeur métier × Effort de mise en oeuvre :
 
-| Besoin métier | Quadrant | Justification |
-| --- | --- | --- |
-| Fiabiliser les réponses (réduire les hallucinations) | Projet stratégique | Problème n°1 remonté, nécessite une refonte RAG complète |
-| Améliorer les réponses sur questions statistiques | Projet stratégique | Nécessite base SQL + routeur |
-| Mise en place d'une base de données SQL | Quick win | Nécessite une database comme PostgreSQL |
-| Création d'un environnement structuré | Projet stratégique | Séparation rag de la logique API et interface |
-| Maintenir la qualité des réponses textuelles  | À éviter | Déjà fonctionnel, à voir dans les perspectives |
-| Gérer les questions mixtes (texte + chiffres)  | Projet stratégique | Routeur, dépend de l'architecture dual-source |
-| Évaluer objectivement les performances  | Quick win | Valeur forte pour effort modéré via RAGAS |
-| Monitorer le système en production  | Projet stratégique | Mise en place Logfire |
-| Garantir la robustesse (pas de crash)  | Projet stratégique | Mise en place Logfire |
-| Offrir plusieurs modes d'interaction  | Tâche mineure | Postman + Interface |
-| Documenter l'API (Swagger)  | Tâche mineure | Automatique avec FastAPI |
-| Maîtriser les coûts d'inférence  | Quick win | Blocage réel rencontré (limite tokens Mistral) |
+![alt text](assets/matrice_priorisation.png)
 
 **Plan d'action déduit** : prioriser les quick wins pour débloquer rapidement la situation, puis engager les projets stratégiques qui nécessitent la refonte architecturale.
 

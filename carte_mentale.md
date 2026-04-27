@@ -7,7 +7,7 @@ title: Carte conceptuelle
 <style>
 .markmap > svg {
   width: 100%;
-  height: 900px;
+  height: 700px;
 }
 </style>
 
@@ -118,7 +118,7 @@ markmap:
   - Apprentissage semi-supervisé
 - **Projets**
   - [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
-    - [Mise en place d'un système RAG](https://github.com/SCFlorian/Deploiement_systeme_RAG)
+  - [Mise en place d'un système RAG](https://github.com/SCFlorian/Deploiement_systeme_RAG)
   - [Système RAG hybride & évaluation LLM](https://github.com/SCFlorian/Evaluation_LLM)
 </script>
 </div>
