@@ -138,36 +138,65 @@ markmap:
 </div>
 </div>
 
+<style>
+/* 1. FIX HEADER : Nom au dessus de la description */
+#header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    padding: 1.5em !important;
+}
+#header h1 { margin-bottom: 0.2em !important; }
+#header p { margin: 0 !important; font-size: 0.9em !important; }
+
+/* 2. FIX CARTE : On s'assure que le conteneur est prêt */
+.markmap-wrapper {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+/* 3. STYLE TOOLBAR : Pour avoir le rendu de ta capture */
+.mm-toolbar {
+  position: absolute !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background: white !important;
+  border: 1px solid #ccc !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  z-index: 1000;
+}
+</style>
+
 <script>
 (function() {
-  const initToolbar = () => {
-    const { markmap } = window;
-    const wrapper = document.querySelector('.markmap-wrapper');
-    const svg = wrapper ? wrapper.querySelector('svg') : null;
+    const run = () => {
+        const { markmap } = window;
+        const wrapper = document.querySelector('.markmap-wrapper');
+        const svg = wrapper ? wrapper.querySelector('svg') : null;
 
-    // On vérifie si Markmap et la Toolbar sont chargés, et si le SVG existe
-    if (!markmap || !markmap.Toolbar || !svg) {
-      setTimeout(initToolbar, 200);
-      return;
-    }
-
-    // On attend que l'autoloader ait fini d'attacher l'instance au SVG
-    if (svg.__markmap__) {
-      // Éviter les doublons
-      if (wrapper.querySelector('.mm-toolbar')) return;
-
-      const mm = svg.__markmap__;
-      const toolbar = new markmap.Toolbar();
-      toolbar.attach(mm);
-      const el = toolbar.render();
-      el.classList.add('mm-toolbar');
-      wrapper.appendChild(el);
-    } else {
-      setTimeout(initToolbar, 200);
-    }
-  };
-
-  initToolbar();
+        if (svg && svg.__markmap__ && markmap.Toolbar) {
+            if (!wrapper.querySelector('.mm-toolbar')) {
+                const mm = svg.__markmap__;
+                const toolbar = new markmap.Toolbar();
+                toolbar.attach(mm);
+                const el = toolbar.render();
+                el.classList.add('mm-toolbar');
+                wrapper.appendChild(el);
+            }
+        } else {
+            // On réessaie tant que la carte n'est pas là
+            setTimeout(run, 300);
+        }
+    };
+    
+    // On attend que la page soit totalement chargée
+    if (document.readyState === 'complete') { run(); } 
+    else { window.addEventListener('load', run); }
 })();
 </script>
 
