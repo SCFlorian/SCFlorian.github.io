@@ -8,7 +8,6 @@
   <a href="/systeme_recommandation" class="btn">⚙️ Projet technique</a>
   <a href="/carte_mentale" class="btn">🧠 Carte conceptuelle</a>
   <a href="/formation_projet" class="btn">📁 Projets réalisés</a>
-  <a href="/cv" class="btn">📄 CV</a>
   <a href="/contact" class="btn">📞 Contact</a>
 </div>
 
@@ -16,9 +15,7 @@
 
 # Bienvenue sur mon Portfolio
 
-## À propos de moi
-
-## À propos de moi
+## 👨 À propos de moi
 
 <div style="display: flex; align-items: center; gap: 30px; margin: 20px 0; flex-wrap: wrap;">
 
@@ -34,7 +31,7 @@
 
 --- 
 
-## Projets phares
+## Compétences techniques
 
 - [**Système de Recommandation & RAG**](/systeme_recommandation) : Mise en place
 d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.

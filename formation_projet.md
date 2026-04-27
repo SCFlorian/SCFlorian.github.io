@@ -9,7 +9,6 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
   <a href="/systeme_recommandation" class="btn">⚙️ Projet technique</a>
   <a href="/carte_mentale" class="btn">🧠 Carte conceptuelle</a>
   <a href="/formation_projet" class="btn">📁 Projets réalisés</a>
-  <a href="/cv" class="btn">📄 CV</a>
   <a href="/contact" class="btn">📞 Contact</a>
 </div>
 
@@ -55,6 +54,10 @@ Le système utilise une architecture RAG (Retrieval-Augmented Generation) pour g
 ## Déploiement d'un modèle de scoring
 
 [![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_scoring-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_scoring)
+
+[![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-md-dark.svg)](https://huggingface.co/FlorianSC/homecredit-scoring-artifacts)
+
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/FlorianSC/Deploiement_modele_scoring)
 
 Précédemment nous avons réalisé un modèle de scoring en partant du projet Home Credit Default Risk de Kaggle. Nous allons reprendre le meilleur modèle de ce projet afin de le déployer.
 
@@ -104,6 +107,8 @@ La problématique :
 ## Déploiement d'un modèle de machine learning
 
 [![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_machine_learning-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
+
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/FlorianSC/Deploiement_modele_machine_learning)
 
 Ce projet reprend le modèle développé dans « Classifiez automatiquement des informations » et le déploie sous la forme d’une API FastAPI accessible en ligne via Hugging Face Spaces.
 
