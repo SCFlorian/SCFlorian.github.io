@@ -24,3 +24,28 @@
   color: #ffffff !important;            /* Texte blanc au survol */
   background-color: #606060 !important;  /* Fond gris au survol */
 }
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.page-header::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url('/assets/photo-profil.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid white;
+  flex-shrink: 0;
+}
+
+.project-name, .project-tagline {
+  text-align: left;
+}
