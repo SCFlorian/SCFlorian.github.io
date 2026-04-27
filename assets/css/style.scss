@@ -25,7 +25,6 @@
   background-color: #606060 !important;  /* Fond gris au survol */
 }
 
-/* Photo de profil dans le header */
 .page-header {
   display: flex;
   align-items: center;
@@ -47,18 +46,18 @@
   flex-shrink: 0;
 }
 
-/* Forcer le titre et le sous-titre à s'empiler verticalement */
-.page-header > * {
-  display: block;
-  width: auto;
+/* Le titre prend toute la largeur dispo après la photo */
+.page-header .project-name {
+  flex: 1 1 auto;
+  min-width: 200px;
+  text-align: left;
+  margin: 0;
 }
 
-.project-name {
+/* Le sous-titre passe sur une nouvelle ligne */
+.page-header .project-tagline {
+  flex: 1 0 100%;
   text-align: left;
-  margin-bottom: 5px;
-}
-
-.project-tagline {
-  text-align: left;
-  margin-top: 0;
+  margin: 5px 0 0 calc(130px + 30px);
+  /* 130px (photo) + 30px (gap) = aligné sous le titre */
 }
