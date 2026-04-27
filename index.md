@@ -18,13 +18,19 @@
 
 ## À propos de moi
 
-Après 5 années d'expérience en tant que Contrôleur de Gestion / Business Analyst
-dans le secteur du transport, j'ai fait une parenthèse de 2 ans dédiée
-au voyage, incluant plusieurs mois en Australie où j'ai conjugué découverte et
-expérience professionnelle. Fort de cette double expérience, professionnelle et
-humaine, j'ai entrepris une reconversion vers la Data Science et le Machine
-Learning via la formation d'OpenClassrooms, avec l'ambition de transformer
-la donnée en leviers de décision concrets.
+## À propos de moi
+
+<div style="display: flex; align-items: center; gap: 30px; margin: 20px 0; flex-wrap: wrap;">
+
+  <img src="/assets/photo_profil.jpg" 
+       alt="Photo de Florian SCHORER" 
+       style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15); flex-shrink: 0;">
+
+  <div style="flex: 1; min-width: 280px;">
+    Après 5 années d'expérience en tant que Contrôleur de Gestion / Business Analyst dans le secteur du transport, j'ai fait une parenthèse de 2 ans dédiée au voyage, incluant plusieurs mois en Australie où j'ai conjugué découverte et expérience professionnelle. Fort de cette double expérience, professionnelle et humaine, j'ai entrepris une reconversion vers la Data Science et le Machine Learning via la formation d'OpenClassrooms, avec l'ambition de transformer la donnée en leviers de décision concrets.
+  </div>
+
+</div>
 
 --- 
 
@@ -34,6 +40,13 @@ la donnée en leviers de décision concrets.
 d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 
 --- 
+
+## ℹ️ Cliquez ci-dessous pour voir et/ou télécharger mon CV
+
+  <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV</a>
+
+---
+
 ## 🛠 Compétences techniques
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -47,6 +60,7 @@ d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-7FC8FF?style=for-the-badge&logo=langchain&logoColor=white)
 
 ## Expérience
 
