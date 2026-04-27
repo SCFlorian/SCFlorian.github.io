@@ -2,31 +2,34 @@
 title: Carte conceptuelle
 ---
 
-<!-- Markmap autoloader -->
-<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
-
-<!-- Markmap toolbar (boutons de zoom) -->
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-<script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
-<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar/dist/style.css">
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
 
 <style>
-.markmap > svg {
+.markmap-wrapper {
+  position: relative;
   width: 100%;
   height: 800px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  margin: 20px 0;
 }
 
-/* Position de la toolbar en bas à droite */
+.markmap-wrapper .markmap,
+.markmap-wrapper .markmap > svg {
+  width: 100%;
+  height: 100%;
+}
+
 .mm-toolbar {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  z-index: 10;
-}
-
-.markmap-wrapper {
-  position: relative;
+  z-index: 100;
 }
 </style>
 
@@ -44,7 +47,7 @@ title: Carte conceptuelle
 
 # Carte conceptuelle interactive
 
-Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez les boutons en bas à droite** pour zoomer/dézoomer, recentrer, ou afficher en plein écran. Vous pouvez aussi cliquer sur les nœuds pour plier/déplier les branches.
+Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez les boutons en bas à droite** pour zoomer ou recentrer la carte. Cliquez sur les nœuds pour plier/déplier les branches, et sur les liens en bleu pour accéder aux projets.
 
 <div class="markmap-wrapper">
 <div class="markmap">
@@ -136,22 +139,45 @@ markmap:
 </div>
 
 <script>
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    if (typeof markmap !== 'undefined' && markmap.Toolbar) {
-      const wrapper = document.querySelector('.markmap-wrapper');
-      const svg = document.querySelector('.markmap > svg');
-      
-      if (wrapper && svg && svg.__markmap__) {
-        const toolbar = new markmap.Toolbar();
-        toolbar.attach(svg.__markmap__);
-        const el = toolbar.render();
-        el.classList.add('mm-toolbar');
-        wrapper.appendChild(el);
-      }
+(function() {
+  function tryAttachToolbar() {
+    var wrapper = document.querySelector('.markmap-wrapper');
+    var svg = wrapper ? wrapper.querySelector('svg') : null;
+    
+    if (!wrapper || !svg || !window.markmap || !window.markmap.Toolbar) {
+      setTimeout(tryAttachToolbar, 500);
+      return;
     }
-  }, 1500);
-});
+    
+    if (wrapper.querySelector('.mm-toolbar')) {
+      return;
+    }
+    
+    try {
+      var mm = svg.__markmap__ || (svg.__data__ && svg.__data__.markmap);
+      if (!mm) {
+        setTimeout(tryAttachToolbar, 500);
+        return;
+      }
+      
+      var toolbar = new window.markmap.Toolbar();
+      toolbar.attach(mm);
+      var el = toolbar.render();
+      el.classList.add('mm-toolbar');
+      wrapper.appendChild(el);
+    } catch (e) {
+      console.error('Toolbar error:', e);
+    }
+  }
+  
+  if (document.readyState === 'complete') {
+    setTimeout(tryAttachToolbar, 1000);
+  } else {
+    window.addEventListener('load', function() {
+      setTimeout(tryAttachToolbar, 1000);
+    });
+  }
+})();
 </script>
 
 ---
