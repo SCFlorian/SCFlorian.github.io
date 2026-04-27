@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  text-align: left;
+  text-align: right;
 }
 
 .page-header::before {
@@ -46,18 +46,6 @@
   flex-shrink: 0;
 }
 
-/* Le titre prend toute la largeur dispo après la photo */
-.page-header .project-name {
-  flex: 1 1 auto;
-  min-width: 200px;
-  text-align: left;
-  margin: 0;
-}
-
-/* Le sous-titre passe sur une nouvelle ligne */
-.page-header .project-tagline {
-  flex: 1 0 100%;
-  text-align: left;
-  margin: 5px 0 0 calc(130px + 30px);
-  /* 130px (photo) + 30px (gap) = aligné sous le titre */
+.project-name, .project-tagline {
+  text-align: right;
 }
