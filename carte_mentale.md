@@ -7,7 +7,7 @@ title: Carte conceptuelle
 <style>
 .markmap > svg {
   width: 100%;
-  height: 700px;
+  height: 900px;
 }
 </style>
 
@@ -25,7 +25,7 @@ title: Carte conceptuelle
 
 # Carte conceptuelle interactive
 
-Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez la molette pour zoomer/dézoomer**, **glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
+Cette carte synthétise mes compétences techniques et mon parcours.**Glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
 
 <div class="markmap">
 <script type="text/template">
@@ -65,7 +65,9 @@ markmap:
   - Validation croisée
   - Tuning d'hyperparamètres
 - **Projet**
-  - [Système de recommandation](/systeme_recommandation)
+  - [Système de recommandation](https://github.com/SCFlorian/Systeme_recommandation_agricole)
+  - [Anticipez les besoins en consommation](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
+  - [Classification automatiquement des informations](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
 
 ## 🗄️ Bases de données
 - **Stack**
@@ -78,7 +80,8 @@ markmap:
   - Modélisation relationnelle
   - Optimisation
 - **Projet**
-  - [Agent SQL](/systeme_recommandation)
+  - [Déploiement HF](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
+  - [Déploiement modèle scoring & monitoring](https://github.com/SCFlorian/Deploiement_modele_scoring)
 
 ## 🚀 MLOps
 - **Stack**
@@ -95,7 +98,8 @@ markmap:
   - CI/CD
   - Déploiement cloud
 - **Projet**
-  - [Déploiement HF](https://huggingface.co/FLORIANSC)
+  - [Déploiement HF](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
+  - [Déploiement modèle scoring & monitoring](https://github.com/SCFlorian/Deploiement_modele_scoring)
 
 ## 🤖 NLP / IA générative
 - **Stack**
@@ -113,8 +117,9 @@ markmap:
   - Transfer Learning
   - Apprentissage semi-supervisé
 - **Projets**
-  - [Système RAG hybride](/systeme_recommandation)
   - [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
+    - [Mise en place d'un système RAG](https://github.com/SCFlorian/Deploiement_systeme_RAG)
+  - [Système RAG hybride & évaluation LLM](https://github.com/SCFlorian/Evaluation_LLM)
 </script>
 </div>
 
