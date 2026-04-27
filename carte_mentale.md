@@ -7,7 +7,7 @@ title: Carte conceptuelle
 <style>
 .markmap > svg {
   width: 100%;
-  height: 1100px;
+  height: 700px;
 }
 </style>
 
