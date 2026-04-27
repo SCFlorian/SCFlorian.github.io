@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  text-align: right;
+  text-align: left;
 }
 
 .page-header::before {
@@ -39,7 +39,7 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-image: url('/assets/photo_profil.jpg');
+  background-image: url('/assets/photo-profil.jpg');
   background-size: cover;
   background-position: center;
   border: 4px solid white;
@@ -47,5 +47,5 @@
 }
 
 .project-name, .project-tagline {
-  text-align: right;
+  text-align: left;
 }
