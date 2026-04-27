@@ -16,18 +16,62 @@ title: Carte conceptuelle
 
 # Carte conceptuelle récapitulant mes compétences et mon parcours
 
-On trouvera à l'intérieur de cette carte :
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
 
-- La valorisation de mes compétences et de mon expérience via les projets de la formation.
-- L'illustration de mon niveau pour chaque compétence ou en langues étrangères.
-- Identification des axes d’amélioration et les défis restant à affronter.
-- Analyse de l’évolution de ma perception du rôle de Data Scientist.
-- Mise en valeur des softs skills
-- Présentation rapide des expériences passées
+<div class="markmap">
+<script type="text/template">
+# Florian SCHORER - Data Scientist
 
-<a href="/assets/carte_mentale.png" target="_blank">
-  <img src="/assets/carte_mentale.png" 
-       alt="Carte mentale des compétences" 
-       style="width: 100%; height: auto; cursor: zoom-in;">
-</a>
+## Soft skills
+- Esprit d'analyse
+- Curiosité
+- Adaptabilité
+- Rigueur
+
+## Analyse exploratoire
+### Stack
+- Pandas, NumPy, Matplotlib
+### Compétences
+- Nettoyage des données
+- Détection d'outliers
+### Projet
+- [AgriTech](/formation_projet)
+
+## Modélisation supervisée
+### Stack
+- scikit-learn, XGBoost
+### Compétences
+- Pipelines ML reproductibles
+- Classification & régression
+### Projet
+- [Système de recommandation](/systeme_recommandation)
+
+## Deep Learning
+### Stack
+- TensorFlow, Keras
+### Compétences
+- CNN
+- Transfer Learning
+### Projet
+- [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
+
+## IA générative et RAG
+### Stack
+- LangChain, FAISS, RAGAS
+### Compétences
+- Embeddings
+- Agents SQL
+### Projet
+- [RAG hybride](/systeme_recommandation)
+
+## MLOps
+### Stack
+- MLflow, Docker, FastAPI
+### Compétences
+- CI/CD
+- APIs REST
+### Projet
+- [HF Spaces](https://huggingface.co/FLORIANSC)
+</script>
+</div>
 
