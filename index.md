@@ -40,7 +40,13 @@ d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
 
 ## ℹ️ Cliquez ci-dessous pour voir et/ou télécharger mon CV
 
-  <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV</a>
+### En Français
+
+<a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV</a>
+
+### In English
+
+<a href="/assets/pdf/CV_english.pdf" class="btn" target="_blank">📄 CV</a>
 
 ---
 
