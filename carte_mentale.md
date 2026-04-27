@@ -140,39 +140,34 @@ markmap:
 
 <script>
 (function() {
-  const initToolbar = () => {
-    const { markmap, mm } = window;
-    const wrapper = document.querySelector('.markmap-wrapper');
-    const svg = wrapper ? wrapper.querySelector('svg') : null;
+    const addToolbar = () => {
+        // On cherche l'instance Markmap créée par l'autoloader
+        const svg = document.querySelector('.markmap-wrapper svg');
+        const { markmap } = window;
 
-    // 1. Vérifier si les librairies sont chargées
-    if (!markmap || !markmap.Toolbar || !markmap.Markmap) return;
+        if (svg && svg.__markmap__ && markmap && markmap.Toolbar) {
+            // Si la toolbar existe déjà, on ne fait rien
+            if (document.querySelector('.mm-toolbar')) return;
 
-    // 2. Récupérer ou créer l'instance Markmap
-    let mmInstance;
-    if (svg && svg.__markmap__) {
-      mmInstance = svg.__markmap__;
-    } else if (svg) {
-      // Si l'autoloader n'a pas encore lié l'instance, on peut essayer de la récupérer via les données D3
-      mmInstance = mm.Markmap.get(svg);
-    }
+            try {
+                const mmInstance = svg.__markmap__;
+                const toolbar = new markmap.Toolbar();
+                toolbar.attach(mmInstance);
+                const el = toolbar.render();
+                el.classList.add('mm-toolbar');
+                document.querySelector('.markmap-wrapper').appendChild(el);
+                console.log("Toolbar activée !");
+            } catch (e) {
+                console.error("Erreur toolbar:", e);
+            }
+        } else {
+            // Si pas encore prêt, on réessaie toutes les 200ms
+            setTimeout(addToolbar, 200);
+        }
+    };
 
-    // 3. Si l'instance existe et qu'il n'y a pas déjà de toolbar
-    if (mmInstance && !wrapper.querySelector('.mm-toolbar')) {
-      const toolbar = new markmap.Toolbar();
-      toolbar.attach(mmInstance);
-      const el = toolbar.render();
-      el.classList.add('mm-toolbar');
-      wrapper.appendChild(el);
-      console.log("Toolbar attachée avec succès !");
-    } else {
-      // Réessayer si pas encore prêt
-      setTimeout(initToolbar, 500);
-    }
-  };
-
-  // Lancer après un court délai pour laisser l'autoloader travailler
-  setTimeout(initToolbar, 800);
+    // On lance la détection
+    addToolbar();
 })();
 </script>
 
