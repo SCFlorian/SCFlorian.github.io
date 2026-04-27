@@ -24,3 +24,23 @@
   color: #ffffff !important;            /* Texte blanc au survol */
   background-color: #606060 !important;  /* Fond gris au survol */
 }
+
+// Style spécifique pour la barre d'outils Markmap
+.mm-toolbar {
+  display: flex;
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 0.5rem !important;
+  padding: 0.25rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+
+  .mm-toolbar-brand {
+    display: none; // Cache le logo Markmap pour épurer comme sur ta capture
+  }
+
+  svg {
+    fill: #606060 !important; // Couleur assortie à tes titres
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

@@ -140,34 +140,34 @@ markmap:
 
 <script>
 (function() {
-    const addToolbar = () => {
-        // On cherche l'instance Markmap créée par l'autoloader
-        const svg = document.querySelector('.markmap-wrapper svg');
-        const { markmap } = window;
+  const initToolbar = () => {
+    const { markmap } = window;
+    const wrapper = document.querySelector('.markmap-wrapper');
+    const svg = wrapper ? wrapper.querySelector('svg') : null;
 
-        if (svg && svg.__markmap__ && markmap && markmap.Toolbar) {
-            // Si la toolbar existe déjà, on ne fait rien
-            if (document.querySelector('.mm-toolbar')) return;
+    // On vérifie si Markmap et la Toolbar sont chargés, et si le SVG existe
+    if (!markmap || !markmap.Toolbar || !svg) {
+      setTimeout(initToolbar, 200);
+      return;
+    }
 
-            try {
-                const mmInstance = svg.__markmap__;
-                const toolbar = new markmap.Toolbar();
-                toolbar.attach(mmInstance);
-                const el = toolbar.render();
-                el.classList.add('mm-toolbar');
-                document.querySelector('.markmap-wrapper').appendChild(el);
-                console.log("Toolbar activée !");
-            } catch (e) {
-                console.error("Erreur toolbar:", e);
-            }
-        } else {
-            // Si pas encore prêt, on réessaie toutes les 200ms
-            setTimeout(addToolbar, 200);
-        }
-    };
+    // On attend que l'autoloader ait fini d'attacher l'instance au SVG
+    if (svg.__markmap__) {
+      // Éviter les doublons
+      if (wrapper.querySelector('.mm-toolbar')) return;
 
-    // On lance la détection
-    addToolbar();
+      const mm = svg.__markmap__;
+      const toolbar = new markmap.Toolbar();
+      toolbar.attach(mm);
+      const el = toolbar.render();
+      el.classList.add('mm-toolbar');
+      wrapper.appendChild(el);
+    } else {
+      setTimeout(initToolbar, 200);
+    }
+  };
+
+  initToolbar();
 })();
 </script>
 
