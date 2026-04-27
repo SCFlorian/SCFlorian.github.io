@@ -140,43 +140,39 @@ markmap:
 
 <script>
 (function() {
-  function tryAttachToolbar() {
-    var wrapper = document.querySelector('.markmap-wrapper');
-    var svg = wrapper ? wrapper.querySelector('svg') : null;
-    
-    if (!wrapper || !svg || !window.markmap || !window.markmap.Toolbar) {
-      setTimeout(tryAttachToolbar, 500);
-      return;
+  const initToolbar = () => {
+    const { markmap, mm } = window;
+    const wrapper = document.querySelector('.markmap-wrapper');
+    const svg = wrapper ? wrapper.querySelector('svg') : null;
+
+    // 1. Vérifier si les librairies sont chargées
+    if (!markmap || !markmap.Toolbar || !markmap.Markmap) return;
+
+    // 2. Récupérer ou créer l'instance Markmap
+    let mmInstance;
+    if (svg && svg.__markmap__) {
+      mmInstance = svg.__markmap__;
+    } else if (svg) {
+      // Si l'autoloader n'a pas encore lié l'instance, on peut essayer de la récupérer via les données D3
+      mmInstance = mm.Markmap.get(svg);
     }
-    
-    if (wrapper.querySelector('.mm-toolbar')) {
-      return;
-    }
-    
-    try {
-      var mm = svg.__markmap__ || (svg.__data__ && svg.__data__.markmap);
-      if (!mm) {
-        setTimeout(tryAttachToolbar, 500);
-        return;
-      }
-      
-      var toolbar = new window.markmap.Toolbar();
-      toolbar.attach(mm);
-      var el = toolbar.render();
+
+    // 3. Si l'instance existe et qu'il n'y a pas déjà de toolbar
+    if (mmInstance && !wrapper.querySelector('.mm-toolbar')) {
+      const toolbar = new markmap.Toolbar();
+      toolbar.attach(mmInstance);
+      const el = toolbar.render();
       el.classList.add('mm-toolbar');
       wrapper.appendChild(el);
-    } catch (e) {
-      console.error('Toolbar error:', e);
+      console.log("Toolbar attachée avec succès !");
+    } else {
+      // Réessayer si pas encore prêt
+      setTimeout(initToolbar, 500);
     }
-  }
-  
-  if (document.readyState === 'complete') {
-    setTimeout(tryAttachToolbar, 1000);
-  } else {
-    window.addEventListener('load', function() {
-      setTimeout(tryAttachToolbar, 1000);
-    });
-  }
+  };
+
+  // Lancer après un court délai pour laisser l'autoloader travailler
+  setTimeout(initToolbar, 800);
 })();
 </script>
 
