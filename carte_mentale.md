@@ -135,77 +135,64 @@ markmap:
 - **Projet**
   - [Agent SQL](/systeme_recommandation)
 </script>
-</div>
+  </div>
 </div>
 
 <style>
-/* 1. FIX HEADER : Nom au dessus de la description */
-#header {
+/* FORCE LE HEADER : Nom en haut, Description dessous */
+.page-header {
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
-    height: auto !important;
-    padding: 1.5em !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 2rem !important;
 }
-#header h1 { margin-bottom: 0.2em !important; }
-#header p { margin: 0 !important; font-size: 0.9em !important; }
+.project-name { font-size: 2.5rem !important; margin-bottom: 0.5rem !important; display: block !important; }
+.project-tagline { font-size: 1.2rem !important; opacity: 0.9 !important; display: block !important; }
 
-/* 2. FIX CARTE : On s'assure que le conteneur est prêt */
-.markmap-wrapper {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #ffffff;
+/* QUALITÉ IMAGE PROFIL */
+.page-header img, img[alt*="Florian"] {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
 }
 
-/* 3. STYLE TOOLBAR : Pour avoir le rendu de ta capture */
+/* TOOLBAR INTERACTIVE */
 .mm-toolbar {
-  position: absolute !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  background: white !important;
-  border: 1px solid #ccc !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
-  z-index: 1000;
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 999 !important;
+    background: white !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
 }
 </style>
 
 <script>
 (function() {
-    const run = () => {
+    function tryInitToolbar() {
         const { markmap } = window;
-        const wrapper = document.querySelector('.markmap-wrapper');
-        const svg = wrapper ? wrapper.querySelector('svg') : null;
-
-        if (svg && svg.__markmap__ && markmap.Toolbar) {
-            if (!wrapper.querySelector('.mm-toolbar')) {
+        const svg = document.querySelector('.markmap svg');
+        
+        // On vérifie si Markmap est prêt et si le SVG a été généré
+        if (markmap && svg && svg.__markmap__) {
+            if (!document.querySelector('.mm-toolbar')) {
                 const mm = svg.__markmap__;
                 const toolbar = new markmap.Toolbar();
                 toolbar.attach(mm);
                 const el = toolbar.render();
                 el.classList.add('mm-toolbar');
-                wrapper.appendChild(el);
+                document.querySelector('.markmap-wrapper').appendChild(el);
+                console.log("Toolbar Markmap installée avec succès");
             }
         } else {
-            // On réessaie tant que la carte n'est pas là
-            setTimeout(run, 300);
+            // Si pas encore prêt, on réessaie toutes les 250ms
+            setTimeout(tryInitToolbar, 250);
         }
-    };
-    
-    // On attend que la page soit totalement chargée
-    if (document.readyState === 'complete') { run(); } 
-    else { window.addEventListener('load', run); }
+    }
+    // Lancement du script
+    if (document.readyState === 'complete') { tryInitToolbar(); }
+    else { window.addEventListener('load', tryInitToolbar); }
 })();
 </script>
-
----
-
-## 📥 Version statique (PNG)
-
-<a href="/assets/carte_mentale.png" target="_blank">
-  <img src="/assets/carte_mentale.png" 
-       alt="Carte mentale des compétences" 
-       style="width: 100%; height: auto; cursor: zoom-in; border: 1px solid #ddd; border-radius: 8px;">
-</a>
