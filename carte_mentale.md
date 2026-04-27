@@ -2,6 +2,8 @@
 title: Carte conceptuelle
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
+
 ---
 
 <div align="center">
@@ -14,64 +16,105 @@ title: Carte conceptuelle
 
 ---
 
-# Carte conceptuelle récapitulant mes compétences et mon parcours
+# Carte conceptuelle interactive
 
-<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez la molette pour zoomer/dézoomer**, **glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
 
-<div class="markmap">
+<div class="markmap" style="height: 800px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #fafafa; margin: 20px 0;">
 <script type="text/template">
-# Florian SCHORER - Data Scientist
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 300
+---
 
-## Soft skills
+# Florian SCHORER
+
+## 🤝 Soft skills
 - Esprit d'analyse
 - Curiosité
+- Travail en équipe
 - Adaptabilité
-- Rigueur
+- Gestion de projet
+- Créativité
+- Rigueur, détail
 
-## Analyse exploratoire
-### Stack
-- Pandas, NumPy, Matplotlib
-### Compétences
-- Nettoyage des données
-- Détection d'outliers
-### Projet
-- [AgriTech](/formation_projet)
+## 🔍 Analyse exploratoire
+- **Stack**
+  - Pandas, NumPy
+  - Matplotlib, Seaborn
+- **Compétences**
+  - Nettoyage des données
+  - Détection d'outliers
+  - Analyse statistique
+  - Visualisation
+- **Projet**
+  - [AgriTech - EDA](/systeme_recommandation)
 
-## Modélisation supervisée
-### Stack
-- scikit-learn, XGBoost
-### Compétences
-- Pipelines ML reproductibles
-- Classification & régression
-### Projet
-- [Système de recommandation](/systeme_recommandation)
+## 🧠 Modélisation supervisée
+- **Stack**
+  - scikit-learn
+  - XGBoost, LightGBM
+- **Compétences**
+  - Pipelines ML
+  - Classification & régression
+  - Validation croisée
+  - Tuning d'hyperparamètres
+- **Projet**
+  - [Système de recommandation](/systeme_recommandation)
 
-## Deep Learning
-### Stack
-- TensorFlow, Keras
-### Compétences
-- CNN
-- Transfer Learning
-### Projet
-- [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
+## 🖼️ Deep Learning
+- **Stack**
+  - TensorFlow, Keras
+- **Compétences**
+  - Réseaux convolutifs (CNN)
+  - Transfer Learning
+  - Apprentissage semi-supervisé
+- **Projet**
+  - [Classification médicale](https://github.com/SCFlorian/Apprentissage_semi_supervise)
 
-## IA générative et RAG
-### Stack
-- LangChain, FAISS, RAGAS
-### Compétences
-- Embeddings
-- Agents SQL
-### Projet
-- [RAG hybride](/systeme_recommandation)
+## 🤖 IA générative & RAG
+- **Stack**
+  - LangChain, FAISS
+  - RAGAS
+- **Compétences**
+  - Embeddings
+  - Évaluation RAG
+  - Agents SQL
+- **Projet**
+  - [Système RAG hybride](/systeme_recommandation)
 
-## MLOps
-### Stack
-- MLflow, Docker, FastAPI
-### Compétences
-- CI/CD
-- APIs REST
-### Projet
-- [HF Spaces](https://huggingface.co/FLORIANSC)
+## 🚀 MLOps & déploiement
+- **Stack**
+  - MLflow, Docker
+  - FastAPI, GitHub Actions
+  - Hugging Face Spaces
+- **Compétences**
+  - Tracking d'expériences
+  - Conteneurisation
+  - APIs REST avec Swagger
+  - CI/CD
+- **Projet**
+  - [Déploiement HF](https://huggingface.co/FLORIANSC)
+
+## 🗄️ Bases de données
+- **Stack**
+  - PostgreSQL, SQL
+- **Compétences**
+  - Requêtes complexes
+  - Modélisation relationnelle
+- **Projet**
+  - [Agent SQL](/systeme_recommandation)
 </script>
 </div>
 
+---
+
+## 📥 Version statique (PNG)
+
+<a href="/assets/carte_mentale.png" target="_blank">
+  <img src="/assets/carte_mentale.png" 
+       alt="Carte mentale des compétences" 
+       style="width: 100%; height: auto; cursor: zoom-in; border: 1px solid #ddd; border-radius: 8px;">
+</a>
