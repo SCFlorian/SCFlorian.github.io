@@ -187,13 +187,7 @@ Trois approches ont été envisagées pour répondre au besoin :
 
 ### **Roadmap de mise en œuvre du nouveau prototype - sur la partie ML**
 
-| Phase | Contenu | Livrable | Durée indicative |
-| --- | --- | --- | --- |
-| Phase 1 — Audit | Prise en main prototype, RAGAS v1, diagnostic | Rapport d'audit chiffré | 1 semaine |
-| Phase 2 — Refonte | Nouvelle architecture, migration Groq, base SQL, routeur | Nouveau système fonctionnel | 3 semaines |
-| Phase 3 — Fiabilisation | Validation Pydantic, conteneurisation Docker, API FastAPI | Système robuste et déployable | 1 semaine |
-| Phase 4 — Observabilité | Intégration Logfire, dashboards, suivi des coûts | Monitoring en place | 1 semaine |
-| Phase 5 — Évaluation finale | RAGAS v2, comparaison avant/après, documentation | Rapport de résultats | 1 semaine |
+![alt text](assets/cadrage_poc.png)
 
 **Total estimé** : 7 semaines.
 
@@ -223,18 +217,39 @@ La démarche retenue combine deux approches complémentaires :
 
 ### **Scénarios budgétaires sur la partie ML**
 
-Trois scénarios d'implémentation ont été étudiés, couvrant l'essentiel des coûts sur la première année d'exploitation :
+Trois scénarios d'implémentation ont été étudiés, dimensionnés selon une hypothèse d'usage de **8 questions par session × 4 sessions/utilisateur/mois**, soit ~32 requêtes mensuelles par utilisateur actif.
 
 ![alt text](assets/tableau_cout_financier.png)
 
-- **Scénario minimal** (≈ 10 120 €) : adapté à une phase de démonstration interne ou de preuve de concept. Le système fonctionne en plan gratuit chez Groq et Logfire, l'hébergement se limite à un petit VPS, et aucune maintenance n'est externalisée. Cette option permet de valider la valeur métier avant d'investir davantage, mais expose à des plafonds de tokens et à une absence de support en cas d'incident.
-- **Scénario standard** (≈ 17 560 €) : recommandé pour un passage en production mesuré. Les forfaits payants chez Groq et Logfire garantissent un volume de requêtes confortable et un monitoring complet. Une demi-journée de maintenance hebdomadaire permet de traiter les incidents, d'itérer sur les évaluations RAGAS et d'ajuster les prompts. C'est le meilleur compromis entre coût et qualité de service pour une première mise en production.
-- **Scénario premium** (≈ 28 600 €) : dimensionné pour un usage grand public à forte volumétrie. L'infrastructure cloud renforcée, les quotas LLM étendus et une journée de maintenance hebdomadaire garantissent une disponibilité élevée et une réactivité sur les évolutions. Ce scénario est pertinent si le chatbot devient un produit commercialisé ou intégré à l'application principale de SportSee.
-- **La maintenance** va permettre principalement 4 choses :
-    - Surveillance des performances et détection de dérive
-    - Gestion des incidents et support
-    - Enrichissement du jeu d'évaluation
-    - Ajustement des prompts et du routeur
+#### Scénario minimal (~ 16 400 €/an, capacité ~ 300 utilisateurs/mois)
+Adapté à une **phase pilote** ou à un **club test**. Le système fonctionne 
+sur un VPS modeste avec PostgreSQL embarqué, le plan gratuit Logfire suffit 
+pour la supervision, et les coûts LLM restent dans le plan gratuit Groq pour 
+l'essentiel. Cette option permet de valider la valeur métier avant de scaler.
+
+#### Scénario standard (~ 25 930 €/an, capacité ~ 5 000 utilisateurs/mois)
+Recommandé pour un **déploiement multi-clubs**. L'infrastructure renforcée 
+(VPS 4 vCPU + PostgreSQL managé) supporte une charge confortable, et le 
+forfait Groq payant garantit la disponibilité. Une journée de maintenance 
+hebdomadaire permet de traiter les incidents et d'itérer sur les évaluations 
+RAGAS. C'est le **meilleur compromis coût/qualité** pour une mise en 
+production opérationnelle.
+
+#### Scénario premium (~ 68 200 €/an, capacité ~ 50 000 utilisateurs/mois)
+Dimensionné pour une **plateforme nationale** ou un **produit grand public** 
+intégré à l'application principale de SportSee. L'infrastructure cloud 
+clusterisée, les quotas LLM étendus et une équipe dédiée à 2 jours/semaine 
+garantissent une haute disponibilité. À cette échelle, le coût LLM (~ 25 800 €) 
+devient le poste majoritaire et nécessite un suivi fin du ratio coût/requête.
+
+#### Hypothèses et sources
+
+- **Tarifs Groq** : Llama 3.3 70B Versatile, 0,59 $/M tokens input, 
+  0,79 $/M tokens output (source : groq.com/pricing, avril 2026)
+- **Tokens par requête** : ~2 300 tokens (1 900 input + 400 output)
+- **Conversion** : taux moyen 1 € = 1,07 $
+- **Tarif jour Data Scientist** : 230 €/jour interne (charges comprises)
+- **Hébergement** : grilles tarifaires OVH Cloud / Scaleway 2026
 
 *Les montants sont des ordres de grandeur.*
 

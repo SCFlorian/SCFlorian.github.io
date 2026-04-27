@@ -13,7 +13,7 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 </div>
 
 ---
-# Projets réalisés lors de ma formation "Data Scientist - Machine Learnin"
+# Projets réalisés lors de ma formation "Data Scientist - Machine Learning"
 
 ## Système de recommandation agricole 
 
