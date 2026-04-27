@@ -25,6 +25,7 @@
   background-color: #606060 !important;  /* Fond gris au survol */
 }
 
+/* Photo de profil dans le header */
 .page-header {
   display: flex;
   align-items: center;
@@ -46,6 +47,18 @@
   flex-shrink: 0;
 }
 
-.project-name, .project-tagline {
+/* Forcer le titre et le sous-titre à s'empiler verticalement */
+.page-header > * {
+  display: block;
+  width: auto;
+}
+
+.project-name {
   text-align: left;
+  margin-bottom: 5px;
+}
+
+.project-tagline {
+  text-align: left;
+  margin-top: 0;
 }
