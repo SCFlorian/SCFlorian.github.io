@@ -2,12 +2,31 @@
 title: Carte conceptuelle
 ---
 
+<!-- Markmap autoloader -->
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.10"></script>
+
+<!-- Markmap toolbar (boutons de zoom) -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar/dist/style.css">
 
 <style>
 .markmap > svg {
   width: 100%;
   height: 800px;
+}
+
+/* Position de la toolbar en bas à droite */
+.mm-toolbar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.markmap-wrapper {
+  position: relative;
 }
 </style>
 
@@ -25,8 +44,9 @@ title: Carte conceptuelle
 
 # Carte conceptuelle interactive
 
-Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez la molette pour zoomer/dézoomer**, **glissez pour déplacer**, **cliquez sur les nœuds** pour plier/déplier les branches.
+Cette carte synthétise mes compétences techniques et mon parcours. **Utilisez les boutons en bas à droite** pour zoomer/dézoomer, recentrer, ou afficher en plein écran. Vous pouvez aussi cliquer sur les nœuds pour plier/déplier les branches.
 
+<div class="markmap-wrapper">
 <div class="markmap">
 <script type="text/template">
 ---
@@ -55,7 +75,6 @@ markmap:
   - Nettoyage des données
   - Détection d'outliers
   - Analyse statistique
-  - Visualisation
 - **Projet**
   - [AgriTech - EDA](/systeme_recommandation)
 
@@ -114,6 +133,26 @@ markmap:
   - [Agent SQL](/systeme_recommandation)
 </script>
 </div>
+</div>
+
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    if (typeof markmap !== 'undefined' && markmap.Toolbar) {
+      const wrapper = document.querySelector('.markmap-wrapper');
+      const svg = document.querySelector('.markmap > svg');
+      
+      if (wrapper && svg && svg.__markmap__) {
+        const toolbar = new markmap.Toolbar();
+        toolbar.attach(svg.__markmap__);
+        const el = toolbar.render();
+        el.classList.add('mm-toolbar');
+        wrapper.appendChild(el);
+      }
+    }
+  }, 1500);
+});
+</script>
 
 ---
 
