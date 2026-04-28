@@ -31,6 +31,8 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
 
   <a href="/assets/pdf/rapport_metier.pdf" class="btn" target="_blank">📄 Rapport métier</a>
 
+![alt text](assets/image_projet/recommandation.png)  ![alt text](assets/image_projet/prediction.png)
+
 ---
 
 ## Évaluez les performances d'un LLM
