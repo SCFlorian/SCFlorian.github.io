@@ -31,7 +31,10 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
 
   <a href="/assets/pdf/rapport_metier.pdf" class="btn" target="_blank">📄 Rapport métier</a>
 
-![alt text](assets/image_projet/recommandation.png)  ![alt text](assets/image_projet/prediction.png)
+<div style="display: flex; gap: 10px;">
+  <img src="/assets/image_projet/recommandation.png" style="width: 50%;">
+  <img src="/assets/image_projet/prediction.png" style="width: 50%;">
+</div>
 
 ---
 
