@@ -34,19 +34,11 @@
 ## 🔑 Compétences clés
 
 <div align="left">
-  <a href="/schema_eda_modelisation" class="btn">🔄 Compétences en EDA & modélisation</a>
+  <a href="/schema_eda_modelisation" class="btn">📊 Compétences en EDA & modélisation</a>
   <a href="/schema_mlops" class="btn">🔄 Compétences en MLOps</a>
   <a href="/system_rag" class="btn">🔙 Compétences RAG</a>
 </div>
 
---- 
-
-## ℹ️ Cliquez ci-dessous pour voir et/ou télécharger mon CV
-
-<div align="left">
-  <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV en Français</a> 
-  <a href="/assets/pdf/CV_english.pdf" class="btn" target="_blank">📄 CV in English</a>
-</div>
 ---
 
 ## 🛠 Compétences techniques
@@ -65,6 +57,16 @@
 ![LangChain](https://img.shields.io/badge/LangChain-7FC8FF?style=for-the-badge&logo=langchain&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlachemy&logoColor=white)
 
+---
+
+## ℹ️ Cliquez ci-dessous pour voir et/ou télécharger mon CV
+
+<div align="left">
+  <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 CV en Français</a> 
+  <a href="/assets/pdf/CV_english.pdf" class="btn" target="_blank">📄 CV in English</a>
+</div>
+
+---
 ## Expérience
 
 ### Contrôleur de Gestion / Business Analyst
