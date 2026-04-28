@@ -5,7 +5,6 @@ title: Compétences RAG
 ---
 
 <div align="center">
-  <a href="/schema_mlops" class="btn">🔙 Précédent</a>
   <a href="/" class="btn">🏠 Accueil</a>
   <a href="/systeme_recommandation" class="btn">⚙️ Projet technique</a>
   <a href="/carte_mentale" class="btn">🧠 Carte conceptuelle</a>
