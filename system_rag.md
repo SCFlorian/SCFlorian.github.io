@@ -15,7 +15,7 @@ title: Compétences RAG
 ---
 # Schéma RAG
 
-![alt text](assets/old_rag_system.png)
+![alt text](assets/schema_rag_basique.png)
 
 # Voici les projets réalisés
 
