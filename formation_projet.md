@@ -124,6 +124,15 @@ La mission est :
 - de mettre en œuvre une méthode d’apprentissage semi-supervisé à partir des quelques étiquettes disponibles
 - de synthétiser vos résultats, formuler des recommandations
 
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/dataset_drift.png" target="_blank">
+    <img src="/assets/image_projet/dataset_drift.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/evidentlyai.png" target="_blank">
+    <img src="/assets/image_projet/evidentlyai.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
+
 ---
 
 ## Modèle de scoring avec suivi MLFlow
@@ -137,6 +146,15 @@ La problématique :
 - Construire et optimiser un modèle de scoring qui donnera une prédiction sur la probabilité de faillite d'un client de façon automatique.
 - Analyser les features qui contribuent le plus au modèle, d’une manière générale (feature importance globale) et au niveau d’un client (feature importance locale), afin, dans un soucis de transparence, de permettre à un chargé d’études de mieux comprendre le score attribué par le modèle.
 - Mettre en œuvre une approche globale MLOps de bout en bout, du tracking des expérimentations à la pré-production du modèle.
+
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/run_mlflow.png" target="_blank">
+    <img src="/assets/image_projet/run_mlflow.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/shap_importance.png" target="_blank">
+    <img src="/assets/image_projet/shap_importance.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
 
 ---
 
@@ -154,6 +172,12 @@ L’objectif :
 - automatiser les tests et le déploiement grâce à GitHub Actions (CI/CD)
 - journaliser les prédictions dans une base de données (PostgreSQL ou SQLite selon l’environnement)
 
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/bdd.png" target="_blank">
+    <img src="/assets/image_projet/bdd.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
+
 ---
 
 ## Classifiez automatiquement des informations
@@ -161,6 +185,12 @@ L’objectif :
 [![GitHub](https://img.shields.io/badge/GitHub-Classifiez_automatiquement_des_informations-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
 
 L’objectif de ce projet est de prédire la probabilité de démission des employés de l’ESN TechNova Partners. Pour cela, nous explorons les données RH, appliquons plusieurs modèles de machine learning et comparons leurs performances afin d’identifier les facteurs clés influençant les départs.
+
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/feature_importance.png" target="_blank">
+    <img src="/assets/image_projet/feature_importance.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
 
 ---
 
@@ -172,5 +202,10 @@ L’objectif de ce projet est de développer un modèle de prédiction de la con
 
 Le travail consiste à explorer les données, tester plusieurs modèles de machine learning et comparer leurs performances afin d’identifier les facteurs ayant le plus d’impact sur la consommation.
 
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/test_different_model.png" target="_blank">
+    <img src="/assets/image_projet/test_different_model.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
 
 
