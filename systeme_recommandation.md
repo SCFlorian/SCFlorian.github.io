@@ -15,7 +15,7 @@ title: Projet technique détaillé
 
 ---
 
-# Rapport de conduite de projet Data & ML
+# Mise en place d'un système RAG et de son évaluation
 
 ## Contexte et analyse des besoins
 

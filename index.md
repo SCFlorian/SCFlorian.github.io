@@ -33,8 +33,9 @@
 
 ## 🔑 Compétences clés
 
-- [**Système de Recommandation & RAG**](/systeme_recommandation) : Mise en place
-d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.
+<div align="center">
+  <a href="/schema_mlops" class="btn">🔄 Compétences en MLOps</a>
+</div>
 
 --- 
 
