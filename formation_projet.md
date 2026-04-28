@@ -32,10 +32,15 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
   <a href="/assets/pdf/rapport_metier.pdf" class="btn" target="_blank">📄 Rapport métier</a>
 
 <div style="display: flex; gap: 10px;">
-  <img src="/assets/image_projet/recommandation.png" style="width: 50%;">
-  <img src="/assets/image_projet/prediction.png" style="width: 50%;">
+  <a href="/assets/image_projet/recommandation.png" target="_blank">
+    <img src="/assets/image_projet/recommandation.png" 
+         style="width: 100%; height: 300px; object-fit: cover; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/prediction.png" target="_blank">
+    <img src="/assets/image_projet/prediction.png" 
+         style="width: 100%; height: 300px; object-fit: cover; cursor: zoom-in;">
+  </a>
 </div>
-
 ---
 
 ## Évaluez les performances d'un LLM
