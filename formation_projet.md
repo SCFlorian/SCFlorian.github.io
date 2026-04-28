@@ -48,6 +48,15 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
 
 Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant la technique de Retrieval-Augmented Generation (RAG) pour fournir des réponses précises et contextuelles à partir d'une base de connaissances personnalisée. L'objectif est de reprendre un prototype réalisé qui était fonctionnel et de procéder à des améliorations afin d'obtenir de meilleurs résultats. Les améliorations seront visibles avec une comparaison des métriques Ragas sur le prototype vs la nouvelle structure du projet.
 
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/interfacechat_reponse.png" target="_blank">
+    <img src="/assets/image_projet/interfacechat_reponse.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/postman_ask.png" target="_blank">
+    <img src="/assets/image_projet/postman_ask.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
+
 ---
 
 ## Déploiement d'un système RAG
@@ -57,6 +66,15 @@ Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant
 Ce projet est une Preuve de Concept (POC). Il s'agit d'un chatbot intelligent capable de recommander des événements culturels à Paris (concerts, théâtres, expositions) en se basant sur des données fraîches via l'API OpenAgenda.
 
 Le système utilise une architecture RAG (Retrieval-Augmented Generation) pour garantir que les réponses sont factuelles et basées sur les documents fournis, évitant ainsi les hallucinations des modèles de langage classiques.
+
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/postman_rag_project.png" target="_blank">
+    <img src="/assets/image_projet/postman_rag_project.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/old_rag_system.png" target="_blank">
+    <img src="/assets/image_projet/old_rag_system.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
 
 ---
 
@@ -81,6 +99,15 @@ Les objectifs sont les suivants :
 - une solution de stockage des données en production
 - un pipeline CI/CD
 - une documentation README
+
+<div style="display: flex; gap: 10px;">
+  <a href="/assets/image_projet/dataset_drift.png" target="_blank">
+    <img src="/assets/image_projet/dataset_drift.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+  <a href="/assets/image_projet/evidentlyai.png" target="_blank">
+    <img src="/assets/image_projet/evidentlyai.png" style="width: 100%; cursor: zoom-in;">
+  </a>
+</div>
 
 ---
 
