@@ -15,7 +15,7 @@ title: Carte conceptuelle
 
 <div align="center">
   <a href="/" class="btn">🏠 Accueil</a>
-  <a href="/systeme_recommandation" class="btn">⚙️ Projet technique</a>
+  <a href="/systeme_recommandation" class="btn">📄 Projet technique</a>
   <a href="/carte_mentale" class="btn">🧠 Carte conceptuelle</a>
   <a href="/formation_projet" class="btn">📁 Projets réalisés</a>
   <a href="/contact" class="btn">📞 Contact</a>
@@ -64,7 +64,7 @@ markmap:
   - Classification & régression
   - Validation croisée
   - Tuning d'hyperparamètres
-- **Projet**
+- **Projets**
   - [Système de recommandation](https://github.com/SCFlorian/Systeme_recommandation_agricole)
   - [Anticipez les besoins en consommation](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
   - [Classification automatiquement des informations](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
@@ -97,7 +97,7 @@ markmap:
   - APIs REST avec Swagger
   - CI/CD
   - Déploiement cloud
-- **Projet**
+- **Projets**
   - [Déploiement HF](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
   - [Déploiement modèle scoring & monitoring](https://github.com/SCFlorian/Deploiement_modele_scoring)
 

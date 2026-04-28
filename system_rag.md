@@ -6,16 +6,20 @@ title: Compétences RAG
 
 <div align="center">
   <a href="/" class="btn">🏠 Accueil</a>
-  <a href="/systeme_recommandation" class="btn">⚙️ Projet technique</a>
+  <a href="/systeme_recommandation" class="btn">📄 Projet technique</a>
   <a href="/carte_mentale" class="btn">🧠 Carte conceptuelle</a>
   <a href="/formation_projet" class="btn">📁 Projets réalisés</a>
   <a href="/contact" class="btn">📞 Contact</a>
 </div>
 
 ---
-# Schéma RAG
+# Schéma RAG basique
 
 ![alt text](assets/schema_rag_basique.png)
+
+# Schéma RAG avec routeur
+
+![alt text](assets/schema_rag_routeur.png)
 
 # Voici les projets réalisés
 
