@@ -31,7 +31,7 @@
 
 --- 
 
-## Compétences techniques
+## 🔑 Compétences clés
 
 - [**Système de Recommandation & RAG**](/systeme_recommandation) : Mise en place
 d'une solution hybride SQL/Vectorielle avec évaluation RAGAS.

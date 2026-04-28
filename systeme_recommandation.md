@@ -219,15 +219,25 @@ La démarche retenue combine deux approches complémentaires :
 
 Trois scénarios d'implémentation ont été étudiés, dimensionnés selon une hypothèse d'usage de **8 questions par session × 4 sessions/utilisateur/mois**, soit ~32 requêtes mensuelles par utilisateur actif.
 
+#### Tableau global
+
 ![alt text](assets/tableau_cout_financier.png)
 
+#### Visualisation du détail des coûts par scénario
+
+![alt text](assets/graph_detail_cout.png)
+
+#### Visualisation globale par scénario
+
+![alt text](assets/graph_par_scenario.png)
+
 #### Scénario minimal (~ 16 400 €/an, capacité ~ 300 utilisateurs/mois)
-Adapté à une **phase pilote** ou à un **club test**. Le système fonctionne 
+Adapté à une **phase pilote**. Le système fonctionne 
 sur un VPS modeste avec PostgreSQL embarqué, le plan gratuit Logfire suffit 
 pour la supervision, et les coûts LLM restent dans le plan gratuit Groq pour 
 l'essentiel. Cette option permet de valider la valeur métier avant de scaler.
 
-#### Scénario standard (~ 25 930 €/an, capacité ~ 5 000 utilisateurs/mois)
+#### Scénario standard (~ 26 110 €/an, capacité ~ 5 000 utilisateurs/mois)
 Recommandé pour un **déploiement multi-clubs**. L'infrastructure renforcée 
 (VPS 4 vCPU + PostgreSQL managé) supporte une charge confortable, et le 
 forfait Groq payant garantit la disponibilité. Une journée de maintenance 
@@ -235,7 +245,7 @@ hebdomadaire permet de traiter les incidents et d'itérer sur les évaluations
 RAGAS. C'est le **meilleur compromis coût/qualité** pour une mise en 
 production opérationnelle.
 
-#### Scénario premium (~ 68 200 €/an, capacité ~ 50 000 utilisateurs/mois)
+#### Scénario premium (~ 67 000 €/an, capacité ~ 50 000 utilisateurs/mois)
 Dimensionné pour une **plateforme nationale** ou un **produit grand public** 
 intégré à l'application principale de SportSee. L'infrastructure cloud 
 clusterisée, les quotas LLM étendus et une équipe dédiée à 2 jours/semaine 
