@@ -13,6 +13,7 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 </div>
 
 ---
+
 # Projets réalisés lors de ma formation "Data Scientist - Machine Learning"
 
 ## Système de recommandation agricole 
@@ -40,7 +41,7 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
   </a>
 </div>
 
----
+**---** 
 
 ## Évaluez les performances d'un LLM
 
@@ -57,7 +58,7 @@ Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant
   </a>
 </div>
 
----
+**---**
 
 ## Déploiement d'un système RAG
 
@@ -76,7 +77,7 @@ Le système utilise une architecture RAG (Retrieval-Augmented Generation) pour g
   </a>
 </div>
 
----
+**---** 
 
 ## Déploiement d'un modèle de scoring
 
@@ -109,7 +110,7 @@ Les objectifs sont les suivants :
   </a>
 </div>
 
----
+**---** 
 
 ## Classification d'images médicale
 
@@ -133,7 +134,7 @@ La mission est :
   </a>
 </div>
 
----
+**---** 
 
 ## Modèle de scoring avec suivi MLFlow
 
@@ -156,7 +157,7 @@ La problématique :
   </a>
 </div>
 
----
+**---** 
 
 ## Déploiement d'un modèle de machine learning
 
@@ -178,7 +179,7 @@ L’objectif :
   </a>
 </div>
 
----
+**---** 
 
 ## Classifiez automatiquement des informations
 
@@ -192,7 +193,7 @@ L’objectif de ce projet est de prédire la probabilité de démission des empl
   </a>
 </div>
 
----
+**---** 
 
 ## Anticipez les besoins en consommation des bâtiments
 
