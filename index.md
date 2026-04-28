@@ -33,8 +33,9 @@
 
 ## 🔑 Compétences clés
 
-<div align="center">
+<div align="left">
   <a href="/schema_mlops" class="btn">🔄 Compétences en MLOps</a>
+    <a href="/system_rag" class="btn">🔄 Compétences RAG</a>
 </div>
 
 --- 
