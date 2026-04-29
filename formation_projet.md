@@ -126,11 +126,8 @@ La mission est :
 - de synthétiser vos résultats, formuler des recommandations
 
 <div style="display: flex; gap: 10px;">
-  <a href="/assets/image_projet/dataset_drift.png" target="_blank">
-    <img src="/assets/image_projet/dataset_drift.png" style="width: 100%; cursor: zoom-in;">
-  </a>
-  <a href="/assets/image_projet/evidentlyai.png" target="_blank">
-    <img src="/assets/image_projet/evidentlyai.png" style="width: 100%; cursor: zoom-in;">
+  <a href="/assets/image_projet/cluster_classification.png" target="_blank">
+    <img src="/assets/image_projet/cluster_classification.png" style="width: 100%; cursor: zoom-in;">
   </a>
 </div>
 
