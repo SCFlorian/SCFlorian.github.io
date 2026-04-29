@@ -16,7 +16,7 @@ title: Réalisation de ces projets dans la cadre de la formation Data Scientist-
 
 # Projets réalisés lors de ma formation "Data Scientist - Machine Learning"
 
-## Système de recommandation agricole 
+## **Système de recommandation agricole**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Système_recommandation_agricole-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Systeme_recommandation_agricole)
 
@@ -43,7 +43,7 @@ Ce projet a pour but de réaliser une application web simple et intuitive pour a
 
 ---
 
-## Évaluez les performances d'un LLM
+## **Évaluez les performances d'un LLM**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Évaluation_LLM-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Evaluation_LLM)
 
@@ -60,7 +60,7 @@ Ce projet implémente un assistant virtuel basé sur un modèle Llama, utilisant
 
 ---
 
-## Déploiement d'un système RAG
+## **Déploiement d'un système RAG**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Déploiement_d_'_un_système_RAG-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_systeme_RAG)
 
@@ -79,7 +79,7 @@ Le système utilise une architecture RAG (Retrieval-Augmented Generation) pour g
 
 ---
 
-## Déploiement d'un modèle de scoring
+## **Déploiement d'un modèle de scoring**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_scoring-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_scoring)
 
@@ -112,7 +112,7 @@ Les objectifs sont les suivants :
 
 ---
 
-## Classification d'images médicale
+## **Classification d'images médicale**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Apprentissage_semi_supervisé-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Apprentissage_semi_supervise)
 
@@ -136,7 +136,7 @@ La mission est :
 
 ---
 
-## Modèle de scoring avec suivi MLFlow
+## **Modèle de scoring avec suivi MLFlow**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Modèle_scoring_MLFlow-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Modele_scoring_MLFlow)
 
@@ -159,7 +159,7 @@ La problématique :
 
 ---
 
-## Déploiement d'un modèle de machine learning
+## **Déploiement d'un modèle de machine learning**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Déploiement_modèle_machine_learning-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
 
@@ -181,7 +181,7 @@ L’objectif :
 
 ---
 
-## Classifiez automatiquement des informations
+## **Classifiez automatiquement des informations**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Classifiez_automatiquement_des_informations-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
 
@@ -195,7 +195,7 @@ L’objectif de ce projet est de prédire la probabilité de démission des empl
 
 ---
 
-## Anticipez les besoins en consommation des bâtiments
+## **Anticipez les besoins en consommation des bâtiments**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Anticipez_besoins_consommations_bâtiments-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
 

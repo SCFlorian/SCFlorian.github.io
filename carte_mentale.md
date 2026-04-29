@@ -79,7 +79,7 @@ markmap:
   - Requêtes complexes
   - Modélisation relationnelle
   - Optimisation
-- **Projet**
+- **Projets**
   - [Déploiement HF](https://github.com/SCFlorian/Deploiement_modele_machine_learning)
   - [Déploiement modèle scoring & monitoring](https://github.com/SCFlorian/Deploiement_modele_scoring)
 
