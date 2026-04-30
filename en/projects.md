@@ -25,7 +25,7 @@ title: Projects completed during my Data Scientist - Machine Learning training
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/FlorianSC/agritech-interface?logs=container)
 
 
-This project aims to build a simple and intuitive web application to help farmers make better decisions. The application provides two functions within a single interface:
+The aim of this project was to build a simple and intuitive web application to help farmers make better decisions. The application has two functions within a single interface:
 
 - Prediction function: Allows a user to select a specific crop, fill in the conditions of their plot (temperature, pesticide use, etc.), and obtain a numeric estimate of the expected yield.
 - Recommendation function: The user only fills in the conditions of their plot, and the application recommends the most profitable crop by simulating yields across all possible crops and displaying a ranking.
@@ -47,7 +47,7 @@ This project aims to build a simple and intuitive web application to help farmer
 
 [![GitHub](https://img.shields.io/badge/GitHub-LLM_Evaluation-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Evaluation_LLM)
 
-This project implements a virtual assistant based on a Llama model, using the Retrieval-Augmented Generation (RAG) technique to provide accurate and contextual answers from a custom knowledge base. The objective was to take an existing functional prototype and improve it to obtain better results. The improvements are visible through a comparison of Ragas metrics between the prototype and the new project structure.
+This project implemented a virtual assistant based on a Llama model, using the Retrieval-Augmented Generation (RAG) technique to provide accurate and contextual answers from a custom knowledge base. The objective was to take an existing functional prototype and improve it to obtain better results. The improvements are visible through a comparison of Ragas metrics between the prototype and the new project structure.
 
 <div style="display: flex; gap: 10px;">
   <a href="/assets/image_projet/interfacechat_reponse.png" target="_blank">
@@ -87,9 +87,9 @@ The system uses a RAG (Retrieval-Augmented Generation) architecture to ensure th
 
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/FlorianSC/Deploiement_modele_scoring)
 
-In a previous project, we built a scoring model based on the Home Credit Default Risk Kaggle competition. Here we take the best model from that project and deploy it.
+In a previous project, we built a scoring model based on the Home Credit Default Risk Kaggle competition. We then took the best model from that project in order to deploy it.
 
-The objectives are:
+The objectives were the following:
 
 - a version history
 - a functional API → FastAPI with a Gradio interface
@@ -116,14 +116,14 @@ The objectives are:
 
 [![GitHub](https://img.shields.io/badge/GitHub-Semi_supervised_learning-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Apprentissage_semi_supervise)
 
-The goal here is to explore the possibility of automating the detection of brain tumors. A substantial set of X-rays was collected: most of these images are unlabeled, while a limited subset has been annotated by expert radiologists.
+The goal here was to explore the possibility of automating the detection of brain tumors. A substantial set of X-rays was collected: most of these images were unlabeled, while a limited subset had been annotated by expert radiologists.
 
-The mission is to:
+The mission was:
 
-- explore the images and extract visual features using a pre-trained model
-- apply clustering methods to identify structures or groupings in the data
-- implement a semi-supervised learning method using the few available labels
-- summarize the results and provide recommendations
+- to explore the images and extract visual features using a pre-trained model
+- to apply clustering methods to identify structures or groupings in the data
+- to implement a semi-supervised learning method using the few available labels
+- to summarize the results and provide recommendations
 
 <div style="display: flex; gap: 10px;">
   <a href="/assets/image_projet/cluster_classification.png" target="_blank">
@@ -137,12 +137,12 @@ The mission is to:
 
 [![GitHub](https://img.shields.io/badge/GitHub-Scoring_Model_MLFlow-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Modele_scoring_MLFlow)
 
-The goal of this project is to build a scoring model and track it with MLflow, based on the Home Credit Default Risk Kaggle project.
+The goal of this project was to build a scoring model and track it with MLflow, based on the Home Credit Default Risk Kaggle project.
 
 The challenges:
 
-- Build and optimize a scoring model that automatically predicts the probability of a client defaulting.
-- Analyze the features that contribute most to the model, both globally (global feature importance) and at the client level (local feature importance), in order to allow an analyst to better understand the score assigned by the model — for transparency.
+- Build and optimize a scoring model to provide an automatic prediction of a client's probability of default.
+- Analyze the features that contributed the most to the model, both globally (global feature importance) and at the client level (local feature importance), in order to allow an analyst to better understand the score assigned by the model — for transparency.
 - Implement a comprehensive end-to-end MLOps approach, from experiment tracking to pre-production deployment.
 
 <div style="display: flex; gap: 10px;">
@@ -164,11 +164,11 @@ The challenges:
 
 This project takes the model developed in "Automatically classify information" and deploys it as a FastAPI API accessible online via Hugging Face Spaces.
 
-The objectives:
+The objective was:
 
-- make the predictive model accessible through a user interface (Gradio)
-- automate testing and deployment with GitHub Actions (CI/CD)
-- log predictions in a database (PostgreSQL or SQLite depending on the environment)
+- to make the predictive model accessible through a user interface (Gradio)
+- to automate testing and deployment with GitHub Actions (CI/CD)
+- to log predictions in a database (PostgreSQL or SQLite depending on the environment)
 
 <div style="display: flex; gap: 10px;">
   <a href="/assets/image_projet/bdd.png" target="_blank">
@@ -182,7 +182,7 @@ The objectives:
 
 [![GitHub](https://img.shields.io/badge/GitHub-Automatic_Classification-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Classifiez_automatiquement_des_informations)
 
-The goal of this project is to predict the probability of resignation for employees of the IT services company TechNova Partners. We explore the HR data, apply several machine learning models, and compare their performance to identify the key factors influencing departures.
+The goal of this project was to predict the probability of resignation for employees of the IT services company TechNova Partners. To do so, we explored the HR data, applied several machine learning models and compared their performance to identify the key factors influencing departures.
 
 <div style="display: flex; gap: 10px;">
   <a href="/assets/image_projet/feature_importance.png" target="_blank">
@@ -196,9 +196,9 @@ The goal of this project is to predict the probability of resignation for employ
 
 [![GitHub](https://img.shields.io/badge/GitHub-Building_energy_forecasting-181717?style=flat-square&logo=github)](https://github.com/SCFlorian/Anticipez_besoins_consommations_batiments)
 
-The goal of this project is to develop a model that predicts the energy consumption of buildings, based on public data from the city of Seattle (2016).
+The goal of this project was to develop a model that predicts the energy consumption of buildings, based on public data from the city of Seattle (2016).
 
-The work involves exploring the data, testing several machine learning models, and comparing their performance to identify the factors with the greatest impact on consumption.
+The work consisted of exploring the data, testing several machine learning models and comparing their performance to identify the factors with the greatest impact on consumption.
 
 <div style="display: flex; gap: 10px;">
   <a href="/assets/image_projet/test_different_model.png" target="_blank">
