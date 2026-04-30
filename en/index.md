@@ -11,7 +11,7 @@
 
 ---
 
-# 👨 About me
+# About me
 
 <div style="display: flex; align-items: center; gap: 30px; margin: 20px 0; flex-wrap: wrap;">
 
@@ -27,7 +27,7 @@
 
 --- 
 
-# 🔑 Key skills
+# Key skills
 
 <div align="left">
   <a href="/en/eda_modeling_diagram" class="btn">📊 EDA & modeling skills</a>
@@ -37,9 +37,9 @@
 
 ---
 
-# 🛠 Technical skills
+# Technical skills
 
-## 🔍 EDA & Modeling
+## EDA & Modeling
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -52,7 +52,7 @@
 ![LightGBM](https://img.shields.io/badge/LightGBM-2E7D32?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-## 🚀 MLOps & Deployment
+## MLOps & Deployment
 
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -67,7 +67,7 @@
 ![EvidentlyAI](https://img.shields.io/badge/EvidentlyAI-ED4C2D?style=for-the-badge&logo=python&logoColor=white)
 ![Logfire](https://img.shields.io/badge/Logfire-E10098?style=for-the-badge&logo=python&logoColor=white)
 
-## 🤖 NLP & Generative AI (RAG)
+## NLP & Generative AI (RAG)
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
@@ -81,14 +81,14 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 
-## 🗄️ Databases
+## Databases
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## 🛠 Tools & environment
+## Tools & environment
 
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
@@ -97,7 +97,7 @@
 
 ---
 
-# ℹ️ Click below to view and/or download my resume
+# Click below to view and/or download my resume
 
 <div align="left">
   <a href="/assets/pdf/CV.pdf" class="btn" target="_blank">📄 Resume in French</a> 
