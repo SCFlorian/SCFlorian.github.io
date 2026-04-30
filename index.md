@@ -11,6 +11,10 @@
   <a href="/contact" class="btn">📞 Contact</a>
 </div>
 
+<div align="right" style="margin-top: 20px;">
+  <a href="/en/" class="btn" style="background-color: #f0f0f0 !important; color: #606060 !important; font-weight: bold;">🇬🇧 English Version</a>
+</div>
+
 ---
 
 # 👨 À propos de moi
