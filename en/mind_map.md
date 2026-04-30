@@ -15,7 +15,6 @@ title: Mind map
 
 <div align="center">
   <a href="/en/" class="btn">🏠 Home</a>
-  <a href="/en/technical_project" class="btn">⚙️ Technical Project</a>
   <a href="/en/mind_map" class="btn">🧠 Mind Map</a>
   <a href="/en/projects" class="btn">📁 Projects</a>
   <a href="/en/contact" class="btn">📞 Contact</a>
