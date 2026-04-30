@@ -16,7 +16,7 @@ title: EDA & modeling skills
 
 # EDA & modeling diagram
 
-![EDA & modeling diagram](/assets/schema_eda_modelisation.png)
+![EDA & modeling diagram](/assets/en/schema_eda_modelisation.png)
 
 # Related projects
 

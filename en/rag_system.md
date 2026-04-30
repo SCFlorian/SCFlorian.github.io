@@ -16,11 +16,11 @@ title: RAG skills
 
 # Basic RAG diagram
 
-![Basic RAG diagram](/assets/schema_rag_basique.png)
+![Basic RAG diagram](/assets/en/schema_rag_basique.png)
 
 # RAG with router diagram
 
-![RAG with router diagram](/assets/schema_rag_routeur.png)
+![RAG with router diagram](/assets/en/schema_rag_routeur.png)
 
 # Related projects
 

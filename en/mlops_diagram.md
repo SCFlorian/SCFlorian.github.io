@@ -16,7 +16,7 @@ title: MLOps skills
 
 # MLOps diagram
 
-![MLOps diagram](/assets/schema_mlops.png)
+![MLOps diagram](/assets/en/schema_mlops.png)
 
 # Related projects
 

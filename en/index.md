@@ -20,7 +20,7 @@
        style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15); flex-shrink: 0;">
 
   <div style="flex: 1; min-width: 280px;">
-    After 5 years of experience as a Financial Controller / Business Analyst in the transport sector, I took a 2-year break dedicated to travel, including several months in Australia where I combined personal discovery and professional experience. Drawing on this dual experience — both professional and human — I have undertaken a career transition into Data Science and Machine Learning through the OpenClassrooms training program, with the ambition of turning data into concrete decision-making levers.
+    After five years of experience as a Management Controller/Business Analyst in the transportation sector, I took a two-year break to travel, including several months in Australia where I combined exploration with professional experience. Building on this dual experience, both professional and personal, I embarked on a career transition into Data Science and Machine Learning through OpenClassrooms’ training program, with the goal of transforming data into concrete decision-making tools.
   </div>
 
 </div>
@@ -107,7 +107,7 @@
 ---
 # Experience
 
-### Financial Controller / Business Analyst
+### Management Controller / Business Analyst
 
 - *Colis Privé / 07.2021 - 12.2022*
 - *HOPPS Group / 01.2018 - 06.2021*
@@ -122,7 +122,7 @@ My responsibilities within the Management Control team were split between corpor
 - Creating dashboards for the Executive Committee
 - Optimization & automation of files and processes
 
-### Operational Financial Controller
+### Management Controller
 
 *Colis Privé / 08.2017 - 12.2017*
 
