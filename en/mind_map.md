@@ -13,6 +13,17 @@ title: Mind map
 
 ---
 
+<div align="center">
+  <a href="/en/" class="btn">🏠 Home</a>
+  <a href="/en/technical_project" class="btn">⚙️ Technical Project</a>
+  <a href="/en/mind_map" class="btn">🧠 Mind Map</a>
+  <a href="/en/projects" class="btn">📁 Projects</a>
+  <a href="/en/contact" class="btn">📞 Contact</a>
+  <a href="/" class="btn" style="background-color: #f0f0f0 !important; color: #606060 !important; font-weight: bold;">🇫🇷 Version Française</a>
+</div>
+
+---
+
 # Interactive mind map
 
 This map summarizes my technical skills and background. **Drag to pan**, **click on the nodes** to expand/collapse branches.
