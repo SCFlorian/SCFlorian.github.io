@@ -88,6 +88,12 @@ markmap:
   - MLflow
   - Docker
   - FastAPI
+  - Gradio
+  - Streamlit
+  - Pytest
+  - Postman
+  - EvidentlyAI
+  - Logfire
   - GitHub Actions
   - Hugging Face Spaces
   - Hugging Face Models
@@ -108,6 +114,9 @@ markmap:
   - RAGAS
   - TensorFlow
   - Keras
+  - Hugging Face
+  - Groq
+  - Sentence transformers
 - **Compétences**
   - Embeddings
   - Recherche vectorielle
